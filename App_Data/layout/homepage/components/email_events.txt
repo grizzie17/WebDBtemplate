@@ -1,0 +1,18 @@
+﻿''<head>
+''<title>Email Notification Link</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Link providing for registration for email of upcoming events">
+''</head>
+
+
+%>
+<div id="emailevents">
+	<div class="BlockHead">
+	<a href="notification_upcoming.asp">Chapter Event Notification</a>
+	</div>
+	<div class="BlockBody">
+		<a href="notification_upcoming.asp">Manage</a> your email notification of upcoming 
+		Chapter Rides &amp; Events.
+	</div>
+</div>
+<%

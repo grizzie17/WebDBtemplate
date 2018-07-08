@@ -1,0 +1,5 @@
+It has become appallingly obvious that our technology has exceeded our humanity.
+
+^{{picture AlbertEinstein.jpg}}
+{{i:-- Albert Einstein}}
+{{small:(1879-1955)}}

@@ -1,0 +1,5 @@
+The more that you read, the more things you will know. The more you learn, the more places you'll go.
+
+^{{picture seuss.jpg}}
+{{i:-- Doctor Seuss}}
+{{small:"I Can Read With My Eyes Shut!"}}

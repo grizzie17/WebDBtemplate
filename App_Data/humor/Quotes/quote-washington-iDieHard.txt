@@ -1,0 +1,4 @@
+I die hard but am not afraid to go.
+
+^{{picture GeorgeWashington.jpg}}
+{{i:-- George Washington}}

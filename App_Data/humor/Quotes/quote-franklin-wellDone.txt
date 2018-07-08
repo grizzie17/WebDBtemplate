@@ -1,0 +1,5 @@
+Well done is better than well said.
+
+^{{picture BenjaminFranklin.jpg}}
+{{i:-- Benjamin Franklin}}
+{{small:(1706 - 1790)}}

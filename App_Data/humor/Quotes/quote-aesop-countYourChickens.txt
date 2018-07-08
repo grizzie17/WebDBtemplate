@@ -1,0 +1,5 @@
+Do not count your chickens before they are hatched.
+
+^{{picture aesop.jpg}}
+{{i:-- Aesop}}
+{{small:The Milkmaid and Her Pail}}

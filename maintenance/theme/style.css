@@ -1,0 +1,201 @@
+﻿
+body
+{
+	background-color: #FFFFFF;
+	background-image: url('default_bg.jpg');
+	background-repeat: no-repeat;
+}
+
+body#pageLogon
+{
+	background-image: url('login_bg.jpg');
+	background-repeat: no-repeat;
+}
+
+body#pageEdit
+{
+	background-image: url('edit_bg.jpg');
+	background-repeat: no-repeat;
+}
+
+body#pageAdd
+{
+	background-image: url('create_bg.jpg');
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+th
+{
+	font-weight: bold;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+h1, h2
+{
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+
+
+A:link
+{
+	color: #000099;
+}
+
+A:active
+{
+	color: #660066;
+}
+
+A:visited
+{
+	color: #990099;
+}
+
+A:hover
+{
+	color: #FF0000;
+}
+
+
+.navtabbox
+{
+	text-align: right;
+	background-image: url('bkg_tabs.jpg');
+	background-position: right;
+	background-repeat: repeat-y;
+}
+
+
+
+
+
+.navigationtab
+{
+	color:		#000099;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+a:link.navigationtab, a:visited.navigationtab, a:active.navigationtab
+{
+	color:		#000099;
+	text-decoration: none;
+}
+
+a:hover.navigationtab
+{
+	color:		#FF0000;
+	font-weight:	bold;
+	text-decoration: underline;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+.navigationsmall
+{
+	color:		#FFFFFF;
+	font-size: xx-small;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+a:link.navigationsmall, a:visited.navigationsmall, a:active.navigationsmall
+{
+	color:		#FFFFFF;
+	text-decoration: none;
+}
+
+A:hover.navigationsmall
+{
+	color:		#FFFF00;
+	text-decoration: underline;
+}
+
+
+.required
+{
+	background-color: #FFEECC;
+}
+
+
+.stick
+{
+	font-family: Arial, sans-serif;
+}
+
+
+.gutter
+{
+	background-color:	#CCCCCC;
+}
+
+
+
+.small
+{
+	font-size: 80%;
+}
+
+.xsmall
+{
+	font-size: 65%;
+}
+
+#dynclock
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.instructions
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: gray;
+}
+
+
+
+.listprice
+{
+	color: #000000;
+	font-weight:	bold;
+	text-decoration: line-through;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.listpricetitle
+{
+	font-size: x-small;
+	color: #000000;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.price
+{
+	font-size: large;
+	color: #CC0000;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.pricetitle
+{
+	font-size: x-small;
+	color: #CC0000;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}

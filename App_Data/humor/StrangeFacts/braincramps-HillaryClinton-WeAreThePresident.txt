@@ -1,0 +1,7 @@
+{{b:Brain Cramps}}
+
+{{picture HillaryClinton.jpg}}
+I'm not going to have some reporters pawing through our papers. {{style b i:We}} are the president.
+
+{{i:-- Hillary Clinton}}
+{{small:commenting on the release of subpoenaed documents}}

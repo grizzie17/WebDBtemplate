@@ -1,0 +1,4 @@
+When I'm good I'm great, when I'm bad I'm excellent.
+
+^{{picture MaeWest.jpg}}
+{{i:-- Mae West}}

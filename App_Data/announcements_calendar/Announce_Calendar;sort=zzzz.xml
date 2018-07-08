@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reminders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="remind.xsd">
+	<event id="e528">
+		<date type="season" pending="3">3</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Winter Begins]]></subject>
+		<location><![CDATA[calendar\SeasonWinter.htm]]></location>
+		<content><![CDATA[{{date verbose}} {{time}} UTC]]></content>
+	</event>
+	<event id="e20011205224200">
+		<date type="yearly" yearly="wday" pending="4">01 3 2</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Martin Luther King Jr. Holiday]]></subject>
+		<location><![CDATA[calendar\MartinLutherKing.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20050105164702">
+		<date type="yearly" yearly="dayn" pending="5">01 01</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[New Year's Day]]></subject>
+		<location><![CDATA[calendar\NewYearsDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20050105164844">
+		<date type="yearly" yearly="wday" pending="6">02 3 2</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[President's Day]]></subject>
+		<location><![CDATA[calendar\PresidentsDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20050105165455">
+		<date type="yearly" yearly="wday" pending="6">11 4 5</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Thanksgiving Day]]></subject>
+		<location><![CDATA[calendar\ThanksgivingDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20051023002035">
+		<date type="yearly" yearly="dayn" pending="10">12 25</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Christmas]]></subject>
+		<location><![CDATA[calendar\Christmas.htm]]></location>
+		<content><![CDATA[May you have a blessed Christmas]]></content>
+	</event>
+	<event id="e20070115213841">
+		<date type="yearly" yearly="dayn" pending="4">02 02</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Ground Hog Day]]></subject>
+		<location><![CDATA[calendar\GroundHogDay.htm]]></location>
+		<content><![CDATA[{{date verbose}} - Will there be six more weeks of winter?]]></content>
+	</event>
+	<event id="e20070115214447">
+		<date type="yearly" yearly="dayn" pending="3">12 07</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Pearl Harbor Day]]></subject>
+		<location><![CDATA[calendar\PearlHarbor.htm]]></location>
+		<content><![CDATA[({{date mm/dd}}) One of the earliest terrorist attacks on US soil]]></content>
+	</event>
+	<event id="e20070115215107">
+		<date type="yearly" yearly="wday" pending="5">03 2 1</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Daylight Savings Time Begins]]></subject>
+		<location><![CDATA[calendar\time_change_cdt.htm]]></location>
+		<content><![CDATA[Sunday morning ({{date mm/dd}}) is the change to Daylight Savings Time (Move clock forward one hour Saturday evening)]]></content>
+	</event>
+	<event id="e20070115215226">
+		<date type="yearly" yearly="wday" pending="5">11 1 1</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Daylight Savings Time Ends]]></subject>
+		<location><![CDATA[calendar\time_change_cst.htm]]></location>
+		<content><![CDATA[Sunday morning ({{date mm/dd}}) is the change back to Standard Time (Move clock back one hour Saturday evening)]]></content>
+	</event>
+	<event id="e20070130173711">
+		<date type="yearly" yearly="dayn" offset="? 1 # -1" pending="3">10 31</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Halloween]]></subject>
+		<location><![CDATA[calendar\halloween.htm]]></location>
+		<content><![CDATA[({{date mm/dd}}) Halloween is here. Please watch for ghouls and goblins as you drive/ride home. Also beware smashed pumpkins in the road.]]></content>
+	</event>
+	<event id="e20070130174230">
+		<date type="yearly" yearly="dayn" offset="? 1 # +1" pending="5">11 11</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Veterans' Day Honors]]></subject>
+		<location><![CDATA[calendar\PittanceOfTime.htm]]></location>
+		<content><![CDATA[View a video tribute to veterans.]]></content>
+	</event>
+	<event id="e20070130174436">
+		<date type="yearly" yearly="wday" pending="9">06 3 2</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Ride To Work Day]]></subject>
+		<location><![CDATA[calendar\RideToWorkDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070130174731">
+		<date type="yearly" yearly="wday" pending="7">11 4 5</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[First Thanksgiving]]></subject>
+		<location><![CDATA[calendar\ThanksgivingFirst.htm]]></location>
+		<content><![CDATA[Learn the True story of the First Thanksgiving]]></content>
+	</event>
+	<event id="e20070130174930">
+		<date type="yearly" yearly="wday" offset="# -2" pending="5">11 4 5</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Thanksgiving Day Proclamation]]></subject>
+		<location><![CDATA[calendar\ThanksgivingWashington.htm]]></location>
+		<content><![CDATA[George Washington's 1789 Thanksgiving Day Proclamation]]></content>
+	</event>
+	<event id="e20070130175717">
+		<date type="yearly" yearly="dayn" pending="6">02 14</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Happy Valentines Day]]></subject>
+		<location><![CDATA[calendar\ValentinesDay.htm]]></location>
+		<content><![CDATA[{{date verbose}} - Remember to get your sweetheart a special gift from you!]]></content>
+	</event>
+	<event id="e20070202165108">
+		<date type="yearly" yearly="wday" pending="6">05 -1 2</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Memorial Day]]></subject>
+		<location><![CDATA[calendar\MemorialDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070202165737">
+		<date type="yearly" yearly="wday" pending="6">05 2 1</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Mother's Day]]></subject>
+		<location><![CDATA[calendar\MothersDay.htm]]></location>
+		<content><![CDATA[{{date mm/dd}} - Remember the mothers...]]></content>
+	</event>
+	<event id="e20070202171920">
+		<date type="yearly" yearly="dayn" offset="+ weekday" pending="4">04 15</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Income Tax Day]]></subject>
+		<location><![CDATA[calendar\TaxDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070204222707">
+		<date type="keyword" offset="# -47" pending="3">easter</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Mardi Gras]]></subject>
+		<location><![CDATA[calendar\MardiGras.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070204224324">
+		<date type="yearly" yearly="dayn" pending="6">07 04</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Independence Day]]></subject>
+		<location><![CDATA[calendar\IndependenceDay.htm]]></location>
+		<content><![CDATA[July 4th]]></content>
+	</event>
+	<event id="e20070204230143">
+		<date type="yearly" yearly="wday" pending="6">09 1 2</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Labor Day]]></subject>
+		<location><![CDATA[calendar\LaborDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070205095549">
+		<date type="yearly" yearly="dayn" pending="4">03 17</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[St. Patrick's Day]]></subject>
+		<location><![CDATA[calendar\StPatricksDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070205100511">
+		<date type="season" pending="5">0</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[First Day of Spring]]></subject>
+		<location><![CDATA[calendar\SeasonSpring.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070205101852">
+		<date type="yearly" yearly="dayn" pending="2">04 01</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[All Fools Day]]></subject>
+		<location><![CDATA[calendar\AllFoolsDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070205132805">
+		<date type="season" pending="4">1</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Summer Begins]]></subject>
+		<location><![CDATA[calendar\SeasonSummer.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070205133440">
+		<date type="season" pending="6">2</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Fall Begins]]></subject>
+		<location><![CDATA[calendar\SeasonFall.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070222232032">
+		<date type="yearly" yearly="dayn" pending="30">05 30</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Motorcycle Awareness Month]]></subject>
+		<location><![CDATA[calendar\mcawareness.htm]]></location>
+		<content><![CDATA[May is Motorcycle Awareness Month]]></content>
+	</event>
+	<event id="e20070307093810">
+		<date type="keyword" pending="3">easter</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Easter]]></subject>
+		<location><![CDATA[calendar\Easter.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20070310135716">
+		<date type="yearly" yearly="dayn" pending="1">03 14</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[PI Day]]></subject>
+		<location><![CDATA[calendar\pi.htm]]></location>
+		<content><![CDATA[Just for fun, celebrated every March 14th (3.14)]]></content>
+	</event>
+	<event id="e20070525111451">
+		<date type="yearly" yearly="wday" pending="5">06 3 1</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Father's Day]]></subject>
+		<location><![CDATA[calendar\FathersDay.htm]]></location>
+		<content><![CDATA[{{date mm/dd}} - Remember the fathers...]]></content>
+	</event>
+	<event id="e20071006185045">
+		<date type="yearly" yearly="dayn" pending="2">10 12</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Columbus Day]]></subject>
+		<location><![CDATA[calendar\ColumbusDay.htm]]></location>
+		<content><![CDATA[October 12]]></content>
+	</event>
+	<event id="e20080906205244">
+		<date type="yearly" yearly="dayn" pending="9">09 11</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[NEVER FORGET]]></subject>
+		<location><![CDATA[calendar\FlyTheFlag.htm]]></location>
+		<content><![CDATA[{{date verbose}} - Fly Your Flag]]></content>
+	</event>
+	<event id="e20080922130424">
+		<date type="yearly" yearly="dayn" offset="+ 7" pending="3">11 09</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Sadie Hawkins Day]]></subject>
+		<location><![CDATA[calendar\SadieHawkinsDay.htm]]></location>
+		<content><![CDATA[{{date verbose}}]]></content>
+	</event>
+	<event id="e20081112123839">
+		<date type="yearly" yearly="dayn" pending="2">04 12</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[First Space Shuttle Launch]]></subject>
+		<location><![CDATA[calendar\shuttlelaunchfirst.htm]]></location>
+		<content><![CDATA[{{date mm/dd}}/1981]]></content>
+	</event>
+	<event id="e20081112130144">
+		<date type="yearly" yearly="dayn" pending="2">09 08</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Star Trek Premiers 1966]]></subject>
+		<location><![CDATA[calendar\StarTrekPremier.htm]]></location>
+		<content><![CDATA[September 8, 1966]]></content>
+	</event>
+	<event id="e20090202153108">
+		<date type="yearly" yearly="dayn" pending="2">02 08</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Boy Scout Day]]></subject>
+		<location><![CDATA[calendar\BoyScoutDay.htm]]></location>
+		<content><![CDATA[{{date verbose}} - Founding of Boy Scouts of America]]></content>
+	</event>
+	<event id="e20090202160409">
+		<date type="yearly" yearly="dayn" pending="3">07 20</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[First Lunar Landing Anniversary]]></subject>
+		<location><![CDATA[calendar\LunarLanding.htm]]></location>
+		<content><![CDATA[July 20, 1969]]></content>
+	</event>
+	<event id="e20090208131317">
+		<date type="yearly" yearly="dayn" pending="4">12 14</date>
+		<category>announcement</category>
+		<style>RmdAnnouncement_Calendar</style>
+		<subject><![CDATA[Alabama Statehood]]></subject>
+		<content><![CDATA[{{date verbose}} - Alabama became 22nd state in 1819]]></content>
+	</event>
+</reminders>

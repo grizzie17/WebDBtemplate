@@ -1,0 +1,61 @@
+﻿<%@ Page Language="VB" Strict="True" %>
+
+
+<script type="text/vb" runat="server">
+	
+	imports Microsoft.VisualBasic.FileSystem
+	imports My.MicrosoftScriptingRuntime.FileSystemObject
+	
+	imports System.IO.Directory
+	imports System.IO.DirectoryInfo
+	imports System.IO.File
+	imports System.IO.FileInfo
+	imports System.IO.FileStream
+	
+	dim g_sQTable as String
+	dim g_sQName as string
+
+	
+	Dim g_oFSO
+	
+	Function findFolder(ByVal sFolderName As String) As String
+		Dim sTemp As String
+		Dim oFolder As System.IO.Directory
+	
+		'DIM	g_oFSO
+		'SET g_oFSO = Server.CreateObject("Scripting.FileSystemObject")
+
+		findFolder = ""
+		
+		oFolder = 
+		
+		oFolder = g_oFSO.GetFolder(Server.MapPath("."))
+		Do Until oFolder.IsRootFolder
+			sTemp = g_oFSO.BuildPath(oFolder.Path, sFolderName)
+			If g_oFSO.FolderExists(sTemp) Then
+				findFolder = sTemp
+				Exit Do
+			End If
+			On Error Resume Next
+			oFolder = oFolder.ParentFolder
+			If Err() Then Exit Do
+		Loop
+		On Error GoTo 0
+		oFolder = Nothing
+		'SET g_oFSO = Nothing
+
+	End Function
+
+
+	Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+		
+		g_oFSO = Server.CreateObject("Scripting.FileSystemObject")
+
+	End Sub
+
+	Protected Sub Page_Unload(ByVal sender As Object, ByVal e As System.EventArgs)
+		
+		g_oFSO = Nothing
+
+	End Sub
+</script>

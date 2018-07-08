@@ -1,0 +1,3 @@
+!!Strange but True
+
+TYPEWRITER, is the longest word that can be made using the letters on only one row of the keyboard.

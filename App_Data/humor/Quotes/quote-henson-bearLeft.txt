@@ -1,0 +1,10 @@
+{{i:Kermit [navigating]:}}
+Fozzie! Bear left!
+
+{{i:Fozzie [driving]:}}
+Right, frog!
+
+^{{picture kermit.gif}}
+{{i:-- Kermit, Fozzie}}
+{{small:Henson, Oz
+(The Muppet Movie)}}

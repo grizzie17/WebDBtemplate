@@ -1,0 +1,8 @@
+﻿''<head>
+''<title>Quotes - Women</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Inspired and funny quotes from women">
+''</head>
+
+
+outputDynamic "quotes", "loadextras.asp?q=quotes&t=15&h=Quotes", "quotes.htm", "1.5", "n", 15, "d"

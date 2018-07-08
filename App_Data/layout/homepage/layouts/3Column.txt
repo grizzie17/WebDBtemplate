@@ -1,0 +1,116 @@
+﻿<%
+SUB contentBegin()
+%>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="tableoutercolset">
+<tr>
+<%
+END SUB 'contentBegin
+SUB contentAnnouncements()
+%>
+<td id="colleft">
+<%
+'========================
+' ColLeft
+'========================
+
+
+%%Announcements%%
+
+
+%>
+</td>
+<%
+END SUB 'contentAnnouncements
+SUB contentCalendar()
+%>
+<td id="colmiddle">
+<%
+'========================
+' ColMiddle
+'========================
+
+
+%%Calendar%%
+
+
+
+%>
+</td>
+<%
+END SUB 'contentCalendar
+SUB contentExtras()
+%>
+<td id="colright">
+<%
+'========================
+' ColRight
+'========================
+
+
+%%Extra%%
+
+
+%>
+</td>
+<%
+END SUB 'contentExtras
+SUB contentLine()
+%>
+</tr><tr>
+<%
+END SUB
+SUB contentEnd()
+%>
+</tr>
+</table>
+<%
+END SUB 'contentEnd
+
+
+contentBegin
+	'  ace - announce, calendar, extras
+	'  eca
+	'  cae
+	'  cea
+	'  aec
+	'  eac
+IF NOT g_bMobileBrowser THEN
+	SELECT CASE g_sHomepageLayout
+	CASE "ace"
+		contentAnnouncements
+		contentCalendar
+		contentExtras
+	CASE "eca"
+		contentExtras
+		contentCalendar
+		contentAnnouncements
+	CASE "cae"
+		contentCalendar
+		contentAnnouncements
+		contentExtras
+	CASE "cea"
+		contentCalendar
+		contentExtras
+		contentAnnouncements
+	CASE "aec"
+		contentAnnouncements
+		contentExtras
+		contentCalendar
+	CASE "eac"
+		contentExtras
+		contentAnnouncements
+		contentCalendar
+	CASE ELSE
+		contentAnnouncements
+		contentCalendar
+		contentExtras
+	END SELECT
+ELSE
+	contentCalendar
+	contentLine
+	contentAnnouncements
+	contentLine
+	contentExtras
+END IF
+contentEnd
+%>

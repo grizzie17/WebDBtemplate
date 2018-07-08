@@ -1,0 +1,9 @@
+﻿''<head>
+''<title>Announcements District</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Announcements published from the district website">
+''</head>
+
+
+
+outputDynamic "districtannounce", "loaddistrictannouncements.asp", "districtannouncements.htm", "0.5", "h", 6, "d"

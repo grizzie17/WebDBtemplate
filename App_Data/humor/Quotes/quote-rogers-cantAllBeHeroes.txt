@@ -1,0 +1,5 @@
+We can't all be heroes. Somebody has to sit on the curb and clap as they go by.
+
+^{{picture WillRogers.jpg}}
+{{i:-- Will Rogers}}
+{{small:(1879-1935)}}

@@ -1,0 +1,5 @@
+We all know that art is not the truth, art is a lie that makes us realize the truth.
+
+^{{picture PabloPicasso.jpg}}
+{{i:-- Pablo Picasso}}
+{{small:(1881-1973)}}

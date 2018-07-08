@@ -1,0 +1,17 @@
+!!Parking Lot Topple
+{{style small i:Street Strategy
+{{smaller:--Motorcycle Consumer News}}}}
+
+{{i:by Ken Codon}}
+
+Randy has no trouble riding his motorcycle in all kinds of situation, except one--slow speed maneuvers. Randy has difficulty balancing his big touring rig when slowing for traffic or when negotiating parking lots. One thing that contributes to Randy's trouble is his anxiety about tipping his big rig over. It happened once, and he does not want it to happen again.
+
+One day, Randy is rolling slowly through a busy parking lot, trying to find a place to park. He sees an empty space to his left so he begins to wheel his bike around to it. Suddenly, Randy is started by the sight of a car backing out from another spot right next to him. He instinctively grabs the front brake and the big motorcycle immediately falls to the ground.
+
+Randy just found out that braking when turning as slow speeds is a sure-fire way to drop a bike. One of the key factors that keeps a motorcycle balanced is gyroscopic force, which occurs when the wheels are spinning--the faster they spin, the more stable the bike becomes. At parking lot speeds, there is very little gyroscopic effect, which means that keeping a motorcycle upright is done almost exclusively by a combination of rider balance and handlebar steering. When Randy touched the sensitive front brake while turning, the bike's weight was pitched in the direction of the front tire and toppled the bike.
+
+Of course, stopping a motorcycle at slow speeds does not mean it will always fall over. Randy's motorcycle fell over because he was leaned slightly in a turn. Had he straightened the motorcycle before applying the brakes, the stopping force would not have upset the bikes's balance, and Randy would have been able to keep the bike upright.
+
+Another thing that Randy could have done to avert the tipover was to use the rear brake instead of the front brake. The rear brake's force is in line with the chassis, so it has less effect on balance and would have allowed him to slow while turning.
+
+Randy's anxiety probably contributed to the situation as well. Anxiety caused tension that prevented him from executing smooth, precise inputs. Randy's anxiety also clouded his mind so Randy may have been able to identify subtle clues indicating that a driver was about to back out. This could have prevented the need for a quick stop to occur in the first place.

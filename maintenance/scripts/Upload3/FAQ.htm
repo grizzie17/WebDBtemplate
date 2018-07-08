@@ -1,0 +1,1024 @@
+<style> BLOCKQUOTE { background-color: #ccccff; }
+	</style>
+<center>
+	<h1>Upload Files without COM</h1>
+	<a href="http://www.lewismoten.com"><img src="images/Lewie.jpg" border="0" WIDTH="70" HEIGHT="100"></a>
+	<h4>Created by Lewis Moten</h4>
+	<a href="http://www.lewismoten.com">http://www.lewismoten.com</a>
+</center>
+<p>
+	I have gone through the internet and my email trying to collect many of the 
+	questions that I have received in the past concerning version 1 and 2 of the 
+	Upload Files without COM scripts. I have also tried to display examples for 
+	common scenarios that many of you will use. Please read through this FAQ fully 
+	before sending me a question.&nbsp;
+</p>
+<a href="#GeneralInfo">General Information</a><br>
+<a href="#GettingStarted">Getting Started</a><br>
+<a href="#ManagingExistingFiles">Managing Existing Files</a><br>
+<a href="#FileRestrictions">File Restrictions</a><br>
+<a href="#WorkingWithDatabases">Working with Databases</a><br>
+<a href="#FileNames">File Names</a><br>
+<a href="#Performance">Performance</a><br>
+<a href="#Miscellaneous">Miscellaneous</a><br>
+<a href="#TroubleShooting">Trouble Shooting</a><br>
+<a name="GeneralInformation"></a>
+<h2>General Information</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>What does it do?</b>
+		<p>
+			This script allows you to upload multiple files and fields without purchasing 
+			or registering COM objects. It is ideal for shared hosts that frown upon 3rd 
+			Party com objects or charge an arm and a leg for them.
+		</p>
+		<p>
+			This script provides an object oriented interface using classes for easier 
+			development. The power that this script has over others is that it does not use 
+			dictionary objects to store the uploaded files. It also harnesses the power of 
+			ADODB to prepare and save binary data to the file system with quick speeds. 
+			This is the script that you have been looking for. You can get a really good 
+			feel for how the script is used just by reading through this FAQ.
+		</p>
+		<p>
+			The code is commented very well and comes along with examples of how to do 
+			common operations, as well as the FAQ you are reading now. Bugs from version 2 
+			have been fixed, or otherwise throw exceptions to the user giving them details 
+			of how to correct the problem (such as giving permission to the internet user 
+			account). Memory is managed more efficiently in version 3 that allows for more 
+			scalability and larger files.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What is new in version 3?</b>
+		<p>&nbsp;</p>
+		<ul>
+			<li>
+			Better control over memory management.
+			<li>
+			Detailed errors with suggestive fixes for user errors.
+			<li>
+			Fixed errors reported by other users that could be duplicated
+			<li>
+			File Management (Move, Copy, Rename, Delete)
+			<li>
+			Assignment of default file name if none were provided
+			<LI>
+			Introduced ability to display upload progress meter
+			<li>
+			Method to return a similar unique file name not used within a folder
+			<li>
+			Method to return a collection of fields assigned the same field name
+			<li>
+			First FAQ was created
+			<li>
+			Debug method to write contents of posted data for developers and 
+			troubleshooting
+			<li>
+			Structure documented in separate file.
+			<li>
+				Mug shot of the developer</li>
+		</ul>
+		<p>&nbsp;</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What are the requirements?</b>
+		<p>
+			You should have Microsoft Data Access Components (ADODB) 2.6 or later 
+			installed. Also, you need to have Microsoft Windows Script 5.5 or later 
+			installed as well. Many ISP's have this installed by default. If your ISP does 
+			not have them installed, you can direct them to download the software from 
+			Microsoft's website for free.
+		</p>
+		<p>
+			<a href="http://www.microsoft.com/data">Microsoft Data Access Components</a><br>
+			<a href="http://www.microsoft.com/scripting">Microsoft Windows Script</a>
+		</p>
+		<p>
+			I would also like to point out that you must run this script on a website that 
+			can process ASP scripts. You can not view these scripts from your file system. 
+			You will have to type in a URL in your web browser beginning with http://. 
+			Microsoft provides a web server called Internet Information Server (IIS) for 
+			servers and Personal Web Server for personal computers. Personal Web Server was 
+			made available with Windows NT 4.0 Option Pack, but is compatible with Windows 
+			9x operating systems.
+		</p>
+		<p>
+			<a href="http://www.microsoft.com/iis">Internet Information Services</a><br>
+			<a href="http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/default.asp">
+				Windows NT 4.0 Option Pack</a>
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>How much does your script cost?</b>
+		<p>
+			The script is free to use within your website. I do ask that you register this 
+			script at <A href="http://upload.lewismoten.com">http://upload.lewismoten.com</A>.&nbsp; 
+			Monetary donations&nbsp;(large and small) are accepted through PayPal with my 
+			account, Axiom Studios, Inc. If you would like to donate equipment, hosting 
+			space, or software, please contact me at lewis@moten.com.
+		</p>
+		<p>
+			<a href="https://www.paypal.com/xclick/business=lewis@moten.com&amp;item_name=Upload+Files+Without+COM&amp;no_note=1&amp;tax=0&amp;currency_code=USD">
+				Make a donation</a>
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>Can I modify your script?</b>
+		<p>
+			Yes, you may modify it for your own website, but you may not publish or 
+			distribute the code without my written permission. Simply put, if you are 
+			making money with my script, I would appreciate some acknowledgement, funds, 
+			hosted space and/or hardware to encourage my development for the open source 
+			community. Email me for more details.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>How can you claim to upload files without COM?</b>
+		<p>
+			I am aware that since version 2, I have used the MDAC components (ADODB) to 
+			speed up the upload process. If you want to get technical, using the Request 
+			object is a COM component. I could rename this script to <i>upload files without 
+				having to install additional COM on most current standard windows operating 
+				systems</i>. Instead, I kept the name simple and to the point. It is the 
+			first thing people start looking for when they need the solution that I 
+			provide.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What browsers / operating systems are needed by my visitors?</b>
+		<p>
+			Microsoft Internet Explorer 6.0 appears to work fine on the Windows Platform.<br>
+			Mozilla 1.4 works ok on Windows. I have had problems when dealing with Unicode.<br>
+		</p>
+		<p>
+			I have heard that users with Macintosh computers have problems. If someone has 
+			a spare Mac that they would like to donate, then I would be willing to take the 
+			time to fix up the script to support them.
+		</p>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="GettingStarted"></a>
+<h2>Getting Started</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I install the scripts?</b>
+		<p>
+			These instructions are written for those of you who have access to the computer 
+			with a default installation of IIS. Some steps may have to be changed according 
+			to your setup.
+		</p>
+		<p>
+			The upload script depends on <b>three</b> different scripts. These are 
+			clsField.asp, clsUpload.asp, and clsProgress.asp. In your website, do the 
+			following:
+		</p>
+<ol>
+	<li>
+	Create folder called Upload in your c:\Inetpub\wwwroot directory.
+	<li>
+	Copy clsUpload.asp to the folder
+	<li>
+	Copy clsField.asp to the folder
+	<li>
+	Set the permissions for your Internet Guest Account to have the rites to write, 
+	read, and modify the upload folder.
+	<li>
+		Create an ASP page called Form.asp with the following code: <blockquote> &lt;FORM 
+			method="post" encType="multipart/form-data" action="Upload.asp"&gt;<br>
+			&lt;INPUT type="File" name="File1"&gt;<br>
+			&lt;INPUT type="Submit" value="Upload"&gt;<br>
+			&lt;/FORM&gt; </blockquote>
+	<li>
+		Create an ASP page called Upload.asp with the following code: <blockquote> &lt;!--#INCLUDE 
+			FILE="clsUpload.asp"--&gt;<br>
+			&lt;%<br>
+			Dim Upload<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			Upload("File1").SaveAs Folder &amp; Upload("File1").FileName<br>
+			Set Upload = Nothing<br>
+			%&gt;<br>
+		</blockquote>
+	<li>
+		Visit the Form.asp page in your browser. <a href="http://localhost/Upload/Form.asp">
+			http://localhost/Upload/Form.asp</a></li>
+</ol>
+<p>
+	Hopefully, everything worked fine and you are on your way. Some of the steps 
+	may need to be changed, according to the location of your website.
+</p>
+<!-- =================================================================== -->
+<li>
+	<b>How do I setup permissions on the folder I wish to upload to?</b>
+	<p>
+		Open up your file explorer and locate the folder that you wish to update files 
+		to. Right mouse click the folder and click Properties. Click the Security tab. 
+		You will see a list of users who have access to the folder. Click the Add 
+		button and locate a user beginning with "IUSR_", it will be followed by the 
+		name of your computer. This is called the Internet Guest Account. When you 
+		click on the user in the list of assigned users, you will need to verify that 
+		they have access to write, modify and read.
+	</p>
+<!-- =================================================================== -->
+<li>
+	<b>How do I upload 2 or more files at once?</b>
+	<p>
+		Add additional INPUT tags to your form for uploading files. Give each one a 
+		different name, such as File1, File2, etc.
+	</p>
+	<blockquote> &lt;INPUT type="file" name="File1"&gt;<br>
+		&lt;INPUT type="file" name="File2"&gt;<br>
+		&lt;INPUT type="file" name="File3"&gt; </blockquote><blockquote> Dim Upload<br>
+		Dim FileName<br>
+		Dim Folder<br>
+		Set Upload = New clsUpload<br>
+		Folder = Server.MapPath("Uploads") &amp; "\"<br>
+		Upload("File1").SaveAs Folder &amp; Upload("File1").FileName<br>
+		Upload("File2").SaveAs Folder &amp; Upload("File2").FileName<br>
+		Upload("File3").SaveAs Folder &amp; Upload("File3").FileName<br>
+		Set Upload = Nothing<br>
+	</blockquote>
+<!-- =================================================================== -->
+<li>
+	<b>How do I upload other information in the form at the same time?</b>
+	<p>
+		You can add additional input elements that are different types.
+	</p>
+	<blockquote> &lt;INPUT type="file" name="File1"&gt;<br>
+		&lt;INPUT type="text" name="Description"&gt; </blockquote><blockquote> Dim 
+		Upload<br>
+		Dim Description<br>
+		Dim FileName<br>
+		Dim Folder<br>
+		Set Upload = New clsUpload<br>
+		<u>Description = Upload("Description").Value</u><br>
+		FileName = Upload("File1").FileName<br>
+		Folder = Server.MapPath("Uploads") &amp; "\"<br>
+		Upload("File1").SaveAs Folder &amp; FileName<br>
+		Set Upload = Nothing<br>
+		Response.Write "Description: " &amp; Description </blockquote>
+<!-- =================================================================== -->
+<li>
+	<b>How do I display a progress meter?</b>
+	<p>
+		The progress meter&nbsp;is a little tricky, but I have done most of the work 
+		for you in determining how it can be done.&nbsp; When the user clicks the 
+		Submit button, you will need to open a Popup window that will display the 
+		status for the current upload session.&nbsp; Sessions are identified by passing 
+		a query string to both the Popup window, and the ASP file that processes the 
+		upload.&nbsp; This session should be a random number, or you will run the risk 
+		of your users seeing progress for&nbsp;someone else's upload.
+	</p>
+	<p>One of the most important rules for the progress window is that you <EM>must</EM>
+		<STRONG><U>disable session state</U></STRONG> for the ASP page.&nbsp; You can 
+		leave session state active for the rest of your website, but this page can not 
+		use it.&nbsp; If session state is enabled, then your progress window will 
+		appear to hang until the upload has completed.&nbsp; To disable session state 
+		in one page, you can use the following tag at the top of your page: <STRONG><FONT face="Courier New" size="2">
+				&lt;%@ EnableSessionState=False %&gt;</FONT></STRONG></p>
+	<blockquote>&lt;FORM <U>onsubmit=</U><EM>"return UploadForm_submit()"</EM>&nbsp;method="post" 
+		action="Upload.asp" name="UploadForm" encType="multipart/form-data"&gt;<BR>
+		&lt;INPUT type="file" name="File1"&gt;<br>
+		&lt;INPUT type="submit" value="Upload"&gt;<BR>
+		&lt;/FORM&gt; </blockquote><blockquote>&lt;SCRIPT language="javascript"&gt;<BR>
+		function UploadForm_submit()<BR>
+		{<BR>
+		// Create a random session identifier.
+		<BR>
+		var Session = new String();
+		<BR>
+		Session = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+		<BR>
+		<BR>
+		// append identification of session
+		<BR>
+		<U>document.UploadForm.action</U><EM> += "?Session=" + Session;</EM><BR>
+		<BR>
+		// open the pop-up window
+		<BR>
+		<U>window.open</U>(<EM>"Status.asp?Session=" + Session</EM> ,"upload","width=200,height=200");
+		<BR>
+		}<BR>
+		&lt;/SCRIPT&gt;</blockquote><blockquote>&lt;%@EnableSessionState=False%&gt;<BR>
+		&lt;!--#INCLUDEFILE= "clsProgress.asp"--&gt;&lt; BR&gt; &lt;%<BR>
+		Dim Progress<BR>
+		Set Progress = New clsProgress<BR>
+		Progress.Load<BR>
+		Response.Write "Uploaded "<BR>
+		Response.Write Progress.BytesReceived<BR>
+		Response.Write " of "<BR>
+		Response.Write Progress.TotalBytes<br>
+		Set Progress = Nothing<BR>
+		%&gt;<BR>
+		&lt;SCRIPT language="javascript"&gt;<BR>
+		// reload this page after 1 second.<BR>
+		window.setTimeout("window.location.reload()", 1000);<BR>
+		&lt;/SCRIPT&gt; </blockquote>
+	<p>The progress class exposes the basic information about your upload 
+		session.&nbsp; View the structure documentation for a list of all of its 
+		methods and properties.&nbsp; With this information, you can create your own 
+		progress meters.&nbsp; An example progress meter has been included for you with 
+		the original script package called Progress_Status.asp.</p>
+<!-- =================================================================== -->
+<li>
+	<b>How do I access a collection of fields with the same name?</b>
+	<p>
+		A collection is sent when you have a select list that allows for more then one 
+		item to be chosen, or if you have multiple fields with the same name on your 
+		form. In the past, this was a little tricky to access, but now a new feature 
+		has been introduced. You can access an array of fields by calling the 
+		Collection method on the Upload object. Each field of the form is sent, in the 
+		order in which it occurs in the form.
+	</p>
+	<blockquote> &lt;SELECT multiple size="3" name="Colors"&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION selected value="#ff0000"&gt;Red<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION selected value="#ffffff"&gt;White<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION value="#0000ff"&gt;Blue<br>
+		&lt;/SELECT&gt; </blockquote><blockquote> Dim Upload<br>
+		Set Upload = New clsUpload<br>
+		Dim Colors<br>
+		Dim Color<br>
+		<br>
+		<u>Colors = Upload.Collection("Colors")</u><br>
+		For Each Color In Colors<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Response.Write Color.Value &amp; "&lt;BR&gt;"<br>
+		Next<br>
+		<br>
+		Set Upload = Nothing </blockquote>
+	<!-- =================================================================== --></li>
+</ol> <a name="ManagingExistingFiles"></a>
+<h2>Managing Existing Files</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I delete files?</b>
+		<p>
+			The upload object has a routine called DeleteFile. Pass the full path to the 
+			file to this routine.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			FileName = Upload("File1").FileName<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			<u>Upload.DeleteFile Folder &amp; FileName</u><br>
+			Upload("File1").SaveAs Folder &amp; FileName<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I rename a file in my file system?</b>
+		<p>
+			The upload object has a routine called RenameFile. Pass the full path to the 
+			file to this routine, and the new name of the file.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			FileName = Upload("File1").FileName<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			<u>Upload.RenameFile Folder &amp; FileName, "NewFileName.gif"</u><br>
+			Upload("File1").SaveAs Folder &amp; FileName<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I copy a file in my file system?</b>
+		<p>
+			The upload object has a routine called CopyFile. Pass the full path of the 
+			current file to this routine, and the full path to the target location.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			FileName = Upload("File1").FileName<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			<u>Upload.CopyFile Folder &amp; FileName, Folder &amp; "NewFileName.gif"</u><br>
+			Upload("File1").SaveAs Folder &amp; FileName<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I move a file in my file system?</b>
+		<p>
+			The upload object has a routine called MoveFile. Pass the full path of the 
+			current file to this routine, and the full path to the target location.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			FileName = Upload("File1").FileName<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			<u>Upload.MoveFile Folder &amp; FileName, Folder &amp; "NewFileName.gif"</u><br>
+			Upload("File1").SaveAs Folder &amp; FileName<br>
+			Set Upload = Nothing </blockquote>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="FileRestrictions"></a>
+<h2>File Restrictions</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I restrict the user from uploading certain file extensions? (EXE, BAT, 
+			COM, VBS, etc.)</b>
+		<p>
+			The field object has a property called FileExt. You can check this to verify 
+			that the file extension is valid, or a potential risk.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Dim Ext<br>
+			Set Upload = New clsUpload<br>
+			<u>Ext = Upload("File1").FileExt</u><br>
+			Select Case Ext<br>
+			Case "GIF", "JPG", "PNG", "BMP"<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;FileName = Upload("File1").FileName<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Upload("File1").SaveAs Folder &amp; FileName<br>
+			Case Else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.Write "File type not supported."<br>
+			End Select<br>
+			Set Upload = Nothing </blockquote>
+		<p>
+			Although a filenames extension may be valid, it may still contain harmful 
+			information. Imagine a scenario where a user creates a virus and renames it to 
+			photo.gif. This will get past your file extension validation. You may wish to 
+			use other scripts or components to validate the binary data as well. You can 
+			use another script I crated called <i>Read Image Dimensions</i> to help aid you 
+			in verifying a files actual content when dealing with images. The class 
+			clsImage is included with this distribution of Upload Files without COM.
+		</p>
+		<blockquote> Dim Width<br>
+			Dim Height<br>
+			Set Upload = New clsUpload<br>
+			Set Image = New clsImage<br>
+			Image.DataStream = Upload.Fields("File1").BinaryData<br>
+			<u>Select Case Image.ImageType</u><br>
+			Case "GIF", "JPG", "PNG", "BMP"<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;FileName = Upload("File1").FileName<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Upload("File1").SaveAs Folder &amp; FileName<br>
+			Case Else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.Write "File type not supported."<br>
+			End Select<br>
+			Set Image = Nothing<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I get image pixel dimensions (height x width)</b>
+		<p>
+			I have published another script that supports this called <i>Read Image Dimensions</i>. 
+			It is included with this distribution as clsImage.asp.
+		</p>
+		<p>
+			With the Image Script, you can either read a file from the file system, or pass 
+			the binary data of the image to be read to it. You can then verify if the image 
+			size falls within your requirements and notify the user if it does not.
+		</p>
+		<blockquote> Dim Width<br>
+			Dim Height<br>
+			Set Upload = New clsUpload<br>
+			Set Image = New clsImage<br>
+			Image.DataStream = Upload.Fields("File1").BinaryData<br>
+			<u>If Image.Width &gt; 640 Then</u><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.Write "Image is too wide. It must be 640x480 
+			or less."<br>
+			<u>ElseIf Image.Height &gt; 480 Then</u><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.Write "Image is too high. It must be 640x480 
+			or less."<br>
+			Else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;FileName = Upload("File1").FileName<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Upload("File1").SaveAs Folder &amp; FileName<br>
+			End If<br>
+			Set Image = Nothing<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I limit the file size that a user can upload?</b>
+		<p>
+			Each field that you upload has a Length property. You can check the length to 
+			make sure it is a specific size or less.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			<u>If Upload("File1").Length &lt;= 1048576</u><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;FileName = Upload("File1").FileName<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Upload("File1").SaveAs Folder &amp; FileName<br>
+			Else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.Write "File size must be 1 megabyte or less"<br>
+			End If<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>Can the user select mulitple files at once?</b>
+		<p>
+			No. This is a restriction of the input element. However, you can have multiple 
+			input elements on one page. The visitor will have to populate each one with the 
+			location of the file on there computer.
+		</p>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="WorkingWithDatabases"></a>
+<h2>Working with Databases</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I upload a file into a database?</b>
+		<p>
+			The Field object has a property called BLOB. This can be saved directly into 
+			the database.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Connection<br>
+			Dim RecordSet<br>
+			Dim ConnectionString<br>
+			<br>
+			<i>' One of these may work for you, depending on your systems configuration</i><br>
+			ConnectionString = "DRIVER=Microsoft Access Driver (*.mdb);DBQ=" &amp; 
+			Server.MapPath("Files.mdb")<br>
+			ConnectionString = "PROVIDER=Microsoft.Jet.OLEDB.4.0;Data Source=" &amp; 
+			Server.MapPath("Files.mdb")<br>
+			<br>
+			Set Upload = New clsUpload<br>
+			FileName = objUpload.Fields("File1").FileName<br>
+			<br>
+			Set Connection = Server.CreateObject("ADODB.Connection")<br>
+			Set RecordSet = Server.CreateObject("ADODB.Recordset")<br>
+			<br>
+			Connection.Open ConnectionString<br>
+			<br>
+			RecordSet.Open "Files", Connection, 3, 3<br>
+			<br>
+			RecordSet.AddNew<br>
+			<br>
+			RecordSet.Fields("FileName").Value = objUpload.Fields("File1").FileName<br>
+			RecordSet.Fields("FileSize").Value = objUpload.Fields("File1").Length<br>
+			RecordSet.Fields("ContentType").Value = objUpload.Fields("File1").ContentType<br>
+			<u>RecordSet.Fields("BinaryData").AppendChunk objUpload("File1").BLOB &amp; ChrB(0)</u><br>
+			<br>
+			RecordSet.Update<br>
+			<br>
+			RecordSet.Close<br>
+			<br>
+			Set RecordSet = Nothing<br>
+			Set Connection = Nothing<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I retrieve a file from the database?</b>
+		<p>
+			You can use the BinaryWrite method on the Response Object
+		</p>
+		<blockquote> Dim Connection<br>
+			Dim RecordSet<br>
+			Dim ConnectionString<br>
+			Dim FileID<br>
+			Dim Sql<br>
+			<br>
+			<i>' One of these may work for you, depending on your systems configuration</i><br>
+			ConnectionString = "DRIVER=Microsoft Access Driver (*.mdb);DBQ=" &amp; 
+			Server.MapPath("Files.mdb")<br>
+			ConnectionString = "PROVIDER=Microsoft.Jet.OLEDB.4.0;Data Source=" &amp; 
+			Server.MapPath("Files.mdb")<br>
+			<br>
+			FileID = Request.QueryString("FileID")<br>
+			<br>
+			<br>
+			Set Connection = Server.CreateObject("ADODB.Connection")<br>
+			Set RecordSet = Server.CreateObject("ADODB.Recordset")<br>
+			<br>
+			Connection.Open ConnectionString<br>
+			<br>
+			Sql = "SELECT FileName, ContentType, BinaryData FROM Files WHERE FileID = " 
+			&amp; FileID<br>
+			<br>
+			RecordSet.Open Sql, Connection, 3, 3<br>
+			<br>
+			If Not RecordSet.EOF Then<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.AddHeader "content-disposition", "attachment; 
+			filename=" &amp; RecordSet("FileName")<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.AddHeader "content-length", 
+			RecordSet("BinaryData").ActualSize<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.ContentType = RecordSet("ContentType")<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<u>Response.BinaryWrite RecordSet("BinaryData")</u><br>
+			Else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Response.Write("File could not be found")<br>
+			End If<br>
+			<br>
+			RecordSet.Close<br>
+			Connection.Close<br>
+			<br>
+			Set RecordSet = Nothing<br>
+			Set Connection = Nothing<br>
+		</blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I display a picture from the database?</b>
+		<p>
+			You can work with the code that retrieves files from the database. Just 
+			reference the web page in your image tag.
+		</p>
+		<blockquote> &lt;IMG src="Download.asp?FileID=327"&gt; </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I setup permissions on the Access database I wish to write in?</b>
+		<p>
+			This is very similar to setting up permissions for folders. Rather then 
+			right-clicking on the folder, you can right-click on the file itself. The only 
+			permissions that you will need to verify&nbsp;are that they have access to read 
+			and modify the file.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What kind of data type should I use with a Microsoft Access database?</b>
+		<p>
+			Microsoft Access can store binary data in fields defined as <u>OLE Object</u>.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What kind of data type should I use with a Microsoft SQL Server?</b>
+		<p>
+			SQL Server has a few data types to store binary data. The quickest one to 
+			identify is the binary data type. This one is like a varchar data type (where 
+			you specify how long your data can be). The data type that I prefer to use is <u>the 
+				image data type</u> (similar to the text and ntext fields). The image data 
+			type holds a 16 byte pointer to your actual binary data and has a size limit of 
+			roughly 2 gigabytes. If you wish to restrict your data so that a file can not 
+			be stored that is greater then a certain size, then go with the binary data 
+			type, other wise - use image.
+		</p>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="FileNames"></a>
+<h2>File Names</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I let the user choose the name of the file?</b>
+		<p>
+			You can provide an extra text field and use this when saving the file. When the 
+			user sends the file over, you can then save the file with the suggested name.
+		</p>
+		<blockquote> &lt;INPUT type="file" name="File1"&gt;<br>
+			&lt;INPUT type="text" name="FileName"&gt; </blockquote><blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			FileName = Upload("FileName").Value<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			Upload("File1").SaveAs Folder &amp; FileName<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I make the file unique, if it already exists?</b>
+		<p>
+			The upload class provides a method called <i>UniqueName</i>. You may pass the 
+			proposed file name, and the path of the folder that you wish to store it 
+			within. If a duplicate file name already exists within the folder, it will 
+			iterate through an index until it finds a name that does not yet exist.
+		</p>
+		<p>
+			If you upload a file called Photo.JPG 3 times, and use the UniqueName method 
+			each time, then you will have 3 files with the following names: Photo.JPG, 
+			Photo[1].JPG, Photo[2].JPG.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim FileName<br>
+			Dim Folder<br>
+			Set Upload = New clsUpload<br>
+			FileName = Upload("File1").FileName<br>
+			Folder = Server.MapPath("Uploads") &amp; "\"<br>
+			FileName = Upload.UniqueName(Folder, FileName)<br>
+			Upload("File1").SaveAs Folder &amp; FileName<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>What happens if the file exists on the file system?</b>
+		<p>
+			The file is overwritten. You can use the UniqueName method to make sure that 
+			files are not over written by assigning them different names if a file with the 
+			same name already exists.
+		</p>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="Performance"></a>
+<h2>Performance</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>Is there anything I can do to speed up&nbsp;uploads?</b>
+		<p>
+			You can modify the number of bytes read at a time when the posted form data is 
+			read.&nbsp; This property can be found within clsUpload.asp.&nbsp;&nbsp; By 
+			default, the setting is 64 KB.&nbsp;&nbsp;Remember, as you decrease the value, 
+			the buffer is read and processed more often.&nbsp; If you are saving progress 
+			information, then&nbsp;a file is opened and written to each time as well.&nbsp; 
+			However, if you make the buffer too large, then your clients' progress window 
+			will not appear to get new information as often.
+		</p>
+		<p>
+			Do not setup your buffer to be under 100 bytes, or you may risk not being able 
+			to parse the data property for each field that had been posted to the web page.
+		</p>
+		<BLOCKQUOTE> Const BufferSize = &amp;H10000 </BLOCKQUOTE>
+		<p>For your reference:
+		</p>
+		<table border="1" align="center">
+			<tr>
+				<td><FONT size="2"><STRONG>Kilobytes</STRONG></FONT></td>
+				<td><FONT size="2"><STRONG>Bytes</STRONG></FONT></td>
+				<td><FONT size="2"><STRONG>Hex Value</STRONG></FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">1 KB</FONT></td>
+				<td><FONT size="2">1024</FONT></td>
+				<td><FONT size="2">&amp;H400</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">2 KB</FONT></td>
+				<td><FONT size="2">2048</FONT></td>
+				<td><FONT size="2">&amp;H800</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">4 KB</FONT></td>
+				<td><FONT size="2">4096</FONT></td>
+				<td><FONT size="2">&amp;H1000</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">8 KB</FONT></td>
+				<td><FONT size="2">8192</FONT></td>
+				<td><FONT size="2">&amp;H2000</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">16 KB</FONT></td>
+				<td><FONT size="2">16384</FONT></td>
+				<td><FONT size="2">&amp;H4000</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">32 KB</FONT></td>
+				<td><FONT size="2">32768</FONT></td>
+				<td><FONT size="2">&amp;H8000</FONT></td>
+			</tr>
+			<tr>
+				<td bgColor="#ccff99"><FONT size="2">64 KB</FONT></td>
+				<td bgColor="#ccff99"><FONT size="2">65536</FONT></td>
+				<td bgColor="#ccff99"><FONT size="2">&amp;H10000</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">128 KB</FONT></td>
+				<td><FONT size="2">131072</FONT></td>
+				<td><FONT size="2">&amp;H20000</FONT></td>
+			</tr>
+			<tr>
+				<td><FONT size="2">256 KB</FONT></td>
+				<td><FONT size="2">262144</FONT></td>
+				<td><FONT size="2">&amp;H40000</FONT></td>
+			</tr>
+		</table>
+	<!-- =================================================================== -->
+	<li>
+		<b>How large can my files be?</b>
+		<p>
+			The answer is not known. Some developers have mentioned that the script has 
+			worked perfectly with files over 100 MB for version 2. Others have mentioned 
+			that it begins to have problems when the files go up to that size, or even over 
+			1 MB. It depends on your web servers' resources and connection speed to the 
+			visitor. It also depends if you are working with the latest version, as each 
+			one usually increases in performance.
+		</p>
+		<p>
+			As each version is released, it becomes more scaleable to allow larger file 
+			sizes. Hopefully, this version will allow more developers to approach the 100 
+			MB test with success.
+		</p>
+		<p>
+			Version 2 helped increase the speed and take less memory to upload a file by 
+			introducing ADO Streams to handle conversion. Version 3 improves on the memory 
+			by constantly going to a central location to retrieve binary data rather then 
+			make small copies of it for each file uploaded. Also, data is not parsed until 
+			your code asks for it.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>How well does vbScript handle the String Concatenations?</b>
+		<p>
+			One of the downfalls of vbScript (and Visual Basic) is that in order to 
+			concatenate a string, you must copy it into memory twice. Take the following 
+			for example: (myString = myString &amp; "xxxxx"). It is copied once to be 
+			assigned, and the other time is copied as the string being assigned.
+		</p>
+		<p>
+			This was a large problem with version 1 and slowed things down a lot when 
+			pulling binary content from the posted form data. The process was sped up by 
+			assigning a large chunk of the data to an ADODB.Stream object to convert the 
+			binary data for us. A lot of you who used version 1 were amazed when version 2 
+			came out.
+		</p>
+		<p>
+			Two internal&nbsp;functions still remain that have a lot of concatenation 
+			(CStrU and CStrB). These two methods convert between Unicode and ASCII strings 
+			one character at a time. This is one of the last bottle necks left due to 
+			limitations of ASP. As long as your text values are small, the methods will not 
+			spend too much of your servers resources to convert the data. If you post a 
+			large resume in a TEXTAREA, then you may begin to see noticeable results.
+		</p>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="MiscellaneousQuestions"></a>
+<h2>Miscellaneous Questions</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>Does the script support double-byte character file names?</b>
+		<p>
+			Part of this question depends on your web server, another part depends on your 
+			web browser, and the last part depends on how well I've put my code together 
+			without knowing how to deal with Unicode. Your file names and content of the 
+			file may not transfer properly. I make no guarantees.
+		</p>
+		<p>
+			With that said, I don't have much to go on. From what I can understand, you may 
+			have to modify Meta tags and code pages on the server before you can properly 
+			test if this script supports double byte characters. I tried copying some 
+			double-byte characters from the internet and pasting it into one of my file 
+			names. After I had uploaded it with MSIE, the file was renamed. I tried this on 
+			both Windows XP and a Windows 2000 Server with the same exact results.
+		</p>
+		<p>
+			I tried copying the characters into the contents of a text file, and saved the 
+			file as Unicode. After uploading the file, I was still able to see the correct 
+			Unicode characters within it.
+		</p>
+		<p>
+			I tried the same tests with Mozilla 1.4. It replaced all the Unicode characters 
+			in the filename to underscore characters. Also, it only sent one byte of the 
+			files data across the line.
+		</p>
+		<p>
+			If you have had success or suggestions, please share your findings by sending 
+			me an email.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I remove your signature from the error messages?</b>
+		<p>
+			Just do a search for any portion of the signature in the ASP code. You may find 
+			it within an area where the class initializes. Please do not pass the code 
+			along to others after you had made changes.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What else can your script do?</b>
+		<p>
+			If you are really interesting the full potential of&nbsp;what the script can 
+			do, take a look at the source code. It is commented very well so that even 
+			beginners can get a rough idea about what is happening.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>Does your script work with ChilisoftASP or iASP?</b>
+		<p>
+			I do not know. If you have ChilisoftASP or iASP, please try it out and tell me 
+			what the results are.
+		</p>
+		<p>
+			<a href="http://wwws.sun.com/software/chilisoft/index.html">Sun ONE Active Server 
+				Pages 4.0</a> - Chili!soft.ASP<br>
+			<a href="http://www.halcyonsoft.com/">Halcyon Software</a> - iASP, Instant ASP<br>
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>Where can I get detailed information about uploading files?</b>
+		<p>
+			You can find this information if you search the internet for <u>RFC 1867</u>. 
+			(A.k.a. Request for Comments). As taken from the document itself, here is its 
+			explanation:
+		</p>
+		<blockquote> This memo defines an Experimental Protocol for the Internet community. 
+			This memo does not specify an Internet standard of any kind. Discussion and 
+			suggestions for improvement are requested. Distribution of this memo is 
+			unlimited. </blockquote>
+		<p>
+			This was back in 1995. RFC 1867 is no longer experimental. It is a widely 
+			accepted Internet standard.
+		</p>
+		<!-- =================================================================== --></li>
+</ol>
+<a name="TroubleShooting"></a>
+<h2>Trouble Shooting</h2>
+<ol>
+	<!-- =================================================================== -->
+	<li>
+		<b>What is the work-around to "Cannot call BinaryRead after using Request.Form"?</b>
+		<p>
+			This error has been caught in version 3 and gives details for working around 
+			it. This problem occurs because the Request.BinaryRead method may only be 
+			called once. Both the Request.Form and Upload class call this method. You have 
+			to make a choice. Do you want to use the Upload class to get your form data, or 
+			the standard Request.Form?
+		</p>
+		<p>
+			Most people run into this problem because they want to request other data 
+			posted on the form besides the file itself. The Upload class does support this. 
+			Use the following code to help you out.
+		</p>
+		<blockquote> Dim Upload<br>
+			Dim Description<br>
+			Set Upload = New clsUpload<br>
+			Description = Upload("Description").Value<br>
+			Set Upload = Nothing </blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>How do I use Request.Form? I get Request object error 'ASP 0207 : 80004005' 
+			Cannot use Request.Form</b>
+		<p>
+			See: <i>What is the work-around to "Cannot call BinaryRead after using 
+				Request.Form"?</i>
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>What do I do if I get a Microsoft VBScript compilation error '800a0401' Expected 
+			end of statement?</b>
+		<p>
+			Your web server is not running with the latest version of Microsoft Windows 
+			Script. This script has been verified with vbScript version 5.5 and above. 
+			Microsoft Windows Script is available free of charge from the Microsoft web 
+			site.
+		</p>
+		<p>
+			<a href="http://www.microsoft.com/scripting">Microsoft Windows Script</a>
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>My host does not allow the use of the File System Object. What can I do?</b>
+		<p>
+			Some web service providers do not allow you to create the 
+			Scripting.FileSystemObject object, or they restrict it to have limited 
+			functionality. If this is becoming a problem for you, then you can disable this 
+			feature. Look in clsUpload.asp for a Const variable named 
+			FileSystemObjectEnabled. Set this value to false and you should be ready to go.
+		</p>
+		<blockquote> <u>Const FileSystemObjectEnabled = False</u> </blockquote>
+		<p>
+			The file system object was used to add new features in this version that allow 
+			you to move, copy, delete, and rename files. It also aids in identifying a 
+			unique name for the file, and verifies the upload directory exists. It is not 
+			required in order to upload files or save them to the file system.
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>I have error 8000### ?</b>
+		<p>
+			If an error isn't addressed within this FAQ, and the error message returned 
+			does not help you, then please contact me (lewis@moten.com).
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>I fixed line ###, what do I do?</b>
+		<p>
+			Please contact me with the reason the code was changed and the source code that 
+			you updated it with. (lewis@moten.com)
+		</p>
+	<!-- =================================================================== -->
+	<li>
+		<b>How can I read the raw data of what is actually coming from the user?</b>
+		<p>
+			For debugging purposes, I have created a DebugText method that you may use. I 
+			advise to use this with small text files, as the time to debug increases 
+			according to the amount of data that it has to parse. If you have a browser 
+			that is giving you problems, then you can send me the results returned from 
+			this method and I can look at the results and determine if I can come up with a 
+			solution to your problem.
+		</p>
+		<blockquote> Dim Upload<br>
+			Set Upload = New clsUpload<br>
+			Response.Write Upload.DebugText<br>
+			Set Upload = Nothing<br>
+		</blockquote>
+	<!-- =================================================================== -->
+	<li>
+		<b>My websites host doesn't allow me to use the file system object. What do I need 
+			to do?</b>
+		<p>
+			Open the clsUpload.asp file and look for the line that assigns a value to 
+			FileSystemObjectEnabled.&nbsp; You will need to set this value to false.&nbsp; 
+			If you disable the file system object, then you will not be able to display 
+			progress meters or interact with the file system through the upload 
+			class.&nbsp; However, you will still be able to save files to the file system 
+			and/or database.
+		</p>
+		<blockquote> Const FileSystemObjectEnabled = False<br>
+		</blockquote>
+		<!-- =================================================================== --></li>
+</ol>

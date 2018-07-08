@@ -1,0 +1,127 @@
+﻿
+
+#heading
+{
+	font-size: large;
+	font-weight: bold;
+	clear: both;
+}
+
+#heading div
+{
+	color: white;
+	background-color: #999;
+	text-align: center;
+	margin: 5px;
+	padding: 4px;
+	float: left;
+}
+
+#heading #title-0
+{
+	width: 200px;
+}
+
+#heading #title-1
+{
+	width: 670px;
+}
+
+
+#columns
+{
+	clear: both;
+}
+
+
+#columns .column{
+
+	margin: 0 5px 0 5px;
+	min-height: 450px; /* set a min-height to ensure a target dropzone */
+	float: left;
+}
+
+#columns .store {
+	width: 200px;
+}
+
+#columns .fixed1{
+	
+	width: 190px;
+}
+
+#columns .dynamic{
+	
+	width: 310px;
+}
+
+#columns .fixed2{
+	
+	width: 130px;
+}
+
+.block .draghandle{
+	cursor: move;
+}
+
+/* all columns */
+#columns .column div
+{
+	
+	background-color: white;
+	
+	border: 1px solid #ccc;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	margin-bottom: 10px;
+}
+
+#columns .column div h1
+{
+	
+	font-size: 12px;
+	
+	padding: 4px;
+	
+	background-color: #e0e0e0;
+}
+
+#columns .column div p
+{
+	font-size: 11px;	
+	padding: 4px;
+}
+
+#columns .column
+{
+	padding: 3px;
+	border: 2px solid #F3F3F3;
+}
+
+#columns .target 
+{
+	padding: 3px;
+	
+	border: 2px dashed #ccc;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+/* column specific styles */
+
+#columns .store
+{
+	background-color: #BBB;
+}
+
+#columns .fixed1 div h1,
+#columns .fixed2 div h1
+{
+	background-color: #ccc;
+}
+

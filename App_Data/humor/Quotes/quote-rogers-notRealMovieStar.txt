@@ -1,0 +1,5 @@
+I'm not a real movie star. I've still got the same wife I started out with twenty-eight years ago.
+
+^{{picture WillRogers.jpg}}
+{{i:-- Will Rogers}}
+{{small:(1879-1935)}}

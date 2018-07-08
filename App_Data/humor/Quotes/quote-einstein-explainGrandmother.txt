@@ -1,0 +1,5 @@
+You do not really understand something unless you can explain it to your grandmother.
+
+^{{picture AlbertEinstein.jpg}}
+{{i:-- Albert Einstein}}
+{{small:(1879-1955)}}

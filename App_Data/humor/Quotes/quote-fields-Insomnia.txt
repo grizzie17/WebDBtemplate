@@ -1,0 +1,4 @@
+The best cure for insomnia is plenty of sleep.
+
+^{{picture wcfields.jpg}}
+{{i:-- W. C. Fields}}

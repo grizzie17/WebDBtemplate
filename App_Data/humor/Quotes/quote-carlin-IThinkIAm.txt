@@ -1,0 +1,4 @@
+I think I am, therefore I am. I think.
+
+^{{picture GeorgeCarlin.jpg}}
+{{i:-- George Carlin}}

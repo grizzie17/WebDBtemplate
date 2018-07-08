@@ -1,0 +1,4 @@
+Today was good. Today was fun. Tomorrow is another one.
+
+^{{picture seuss.jpg}}
+{{i:-- Doctor Seuss}}

@@ -1,0 +1,5 @@
+He is an eloquent man who can treat humble subjects with delicacy, lofty things impressively and moderate things temperately.
+
+^{{picture Cicero.jpg}}
+{{i:-- Cicero}}
+{{small:(106 BC - 43 BC)}}

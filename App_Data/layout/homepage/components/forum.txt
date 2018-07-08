@@ -1,0 +1,8 @@
+﻿''<head>
+''<title>Forum Local</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Summary of recent forum postings for your group">
+''</head>
+
+
+RSSForum "forum.xml", g_sDomain, "localforum", g_sSiteTitle & " Forum", 20

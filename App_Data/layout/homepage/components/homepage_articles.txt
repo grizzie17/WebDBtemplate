@@ -1,0 +1,12 @@
+﻿''<head>
+''<title>Homepage Articles</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Short articles to be included on your homepage">
+''</head>
+
+
+Response.Write "<div id=""homebodycontent"">" & vbCRLF
+pagebody_saveFuncs
+outputMultiplePages TRUE	' TRUE to generate an enclosing table
+pagebody_restoreFuncs
+Response.Write "</div>" & vbCRLF

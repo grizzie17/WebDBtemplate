@@ -1,0 +1,5 @@
+The President of today is just the postage stamp of tomorrow.
+
+^{{picture GracieAllen.jpg}}
+{{i:-- Gracie Allen}}
+{{small:(1906-1964)}}

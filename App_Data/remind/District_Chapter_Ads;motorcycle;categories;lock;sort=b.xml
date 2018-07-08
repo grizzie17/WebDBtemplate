@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<reminders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="remind.xsd">
+	<include href="~/remindxml.asp?h=http://Alabama-gwrra.org/&amp;q=district_chapter_ads" cache-file="district_chapter_ads.xml" cache-interval="d" cache-value="7" cache-break-interval="w" />
+</reminders>

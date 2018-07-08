@@ -1,0 +1,93 @@
+﻿
+
+.rssForum
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+
+.rssForumTitle
+{
+	font-size: medium;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: bottom;
+	background-color: #FFE09F;
+	padding: 4px;
+	background-image: url(../themes/default/header_bkg.jpg);
+}
+
+.rssForumTitle img
+{
+	position: relative;
+	z-index: 10;
+}
+
+
+
+
+.rssForum .rssForumGroup
+{
+	margin-left: 0;
+	position: relative;
+	padding-left: 4px;
+}
+
+.rssForum .rssForumGroup
+{
+	font-weight: bold;	
+}
+
+.rssForum .rssForumTopic
+{
+	font-weight: normal;
+	font-size: medium;
+}
+
+
+.rssForum .rssForumPubDate
+{
+	font-size: xx-small;
+	color: #999999;
+}
+
+
+
+.rssForum ul
+{
+	list-style-type: none;
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.rssForum ul li
+{
+	margin-left: 0;
+}
+
+
+
+
+.rssForum ul ul
+{
+	list-style-type: square;
+	/*margin-left: 0;*/
+}
+
+.rssForum ul ul li
+{
+	margin-left: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+

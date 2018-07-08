@@ -1,0 +1,5 @@
+Imagination is more important than information.
+
+^{{picture AlbertEinstein.jpg}}
+{{i:-- Albert Einstein}}
+{{small:(1879 - 1955)}}

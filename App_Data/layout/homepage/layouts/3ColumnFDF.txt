@@ -1,0 +1,50 @@
+﻿<%
+''<head>
+''<title>3-Column (FDF)</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="fixed1,dynamic,fixed2">
+''</head>
+
+
+%>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="tableoutercolset">
+<tr>
+<td id="colfixed1">
+<%
+'========================
+' ColFixed1
+'========================
+
+
+%%fixed1%%
+
+
+%>
+</td>
+<td id="coldynamic">
+<%
+'========================
+' ColDynamic
+'========================
+
+
+%%dynamic%%
+
+
+
+%>
+</td>
+<td id="colfixed2">
+<%
+'========================
+' ColFixed2
+'========================
+
+
+%%fixed2%%
+
+
+%>
+</td>
+</tr>
+</table>

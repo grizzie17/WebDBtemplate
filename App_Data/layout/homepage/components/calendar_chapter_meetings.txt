@@ -1,0 +1,29 @@
+﻿''<head>
+''<title>Calendar Chapter Meetings</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Upcoming Chapter meetings (used on the district page)">
+''</head>
+
+
+SUB makeCalendarChapterMeetings()
+
+	DIM	nDateBegin, nDateEnd
+
+	nDateBegin = jdateFromVBDate( NOW )
+	nDateEnd = nDateBegin + 7 * 3 - 1
+
+
+Response.Write "<div class=""calendarcontent"">" & vbCRLF
+Response.Write "<div class=""BlockHead""><a title=""Click for more months"" href=""calendar.asp?cat=c-meeting"">Chapter Meetings</a></div>" & vbCRLF
+Response.Write "<div class=""BlockBody"">"
+
+outputDynamic "calendarchaptermeetings", _
+"loadcalendar.asp?f=calendarchaptermeetings.htm&i=h&v=24&r=d&b=" & nDateBegin & "&e=" & nDateEnd & "&c=c-meeting" & "&h=ignore&t=false&x=scripts/remind.xslt", _
+		"calendarchaptermeetings.htm", "0.5", "h", 24, "d"
+
+Response.Write "</div>" & vbCRLF
+Response.Write "</div>" & vbCRLF
+
+
+END SUB
+makeCalendarChapterMeetings

@@ -1,0 +1,4 @@
+Everyone wants to be Cary Grant. Even I want to be Cary Grant.
+
+^{{picture CaryGrant.jpg}}
+{{i:-- Cary Grant}}

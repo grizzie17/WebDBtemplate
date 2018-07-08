@@ -1,0 +1,4 @@
+layout:dynamic
+column-1:calendar_meeting.txt,calendar_events.txt,forum.txt,weather_forecast.txt
+column-2:
+column-3:

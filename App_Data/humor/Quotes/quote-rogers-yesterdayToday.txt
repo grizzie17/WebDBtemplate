@@ -1,0 +1,5 @@
+Don't let yesterday use up too much of today.
+
+^{{picture WillRogers.jpg}}
+{{i:-- Will Rogers}}
+{{small:(1879-1935)}}

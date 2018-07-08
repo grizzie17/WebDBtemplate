@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+	</head>
+	<body>
+		<center>
+			<h1>Upload Files Without COM</h1>
+			<a href="http://www.lewismoten.com"><img src="images/Lewie.jpg" border="0" WIDTH="70" HEIGHT="100"></a>
+			<h4>Created by Lewis Moten</h4>
+			<a href="http://www.lewismoten.com">http://www.lewismoten.com</a>
+		</center>
+		<p>
+			The following is the structure of the interface when working the the Upload 
+			Class.
+		</p>
+		<hr>
+		<p>File Name: clsUpload.asp<br>
+			Class Name: <STRONG>clsUpload</STRONG>
+			<br>
+		</p>
+		<table width="100%" border="1" id="TABLE1">
+			<tr>
+				<td>read-only property</td>
+				<td>
+					Count()
+				</td>
+				<td>
+					<p>Returns number of fields retrieved from the posted form data.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>read-only property</td>
+				<td>
+					Collection(fieldName)
+				</td>
+				<td>
+					<p>Returns an array of field objects&nbsp;parsed from&nbsp;the form data that have 
+						the same field name.&nbsp; Can be used with &lt;SELECT&gt; element with 
+						multiple options selected.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>default read-only property</td>
+				<td>
+					<p>Fields(fieldName)<br>
+						Fields(index)</p>
+				</td>
+				<td>
+					<p>Returns a clsField object that matches the name or ordinal index provided.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>sub</td>
+				<td>
+					DeleteFile(filePath)
+				</td>
+				<td>
+					<p>
+						Deletes a file from the file system.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>sub</td>
+				<td>
+					RenameFile(filePath, fileName)
+				</td>
+				<td>
+					<p>
+						Renames a file on the file system.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>sub</td>
+				<td>
+					CopyFile(source, destination)
+				</td>
+				<td>
+					<p>
+						Copies a file from one location to another on the file system.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>sub</td>
+				<td>
+					MoveFile(source, destination)
+				</td>
+				<td>
+					<p>
+						Moves a file from one location to anther on the file system.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>function</td>
+				<td>
+					UniqueName(folder, proposedName)
+				</td>
+				<td>
+					<p>
+						Checks folder for existing file name.&nbsp; If one exists, it will itterate 
+						through an index until a file name is not found.&nbsp; For example, If a file 
+						Photo.gif exists, it may return Photo[1].gif, Photo[2].gif and so on until it 
+						finds a name that does not exist within the specified folder.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>function</td>
+				<td>
+					DebugText
+				</td>
+				<td>
+					<p>
+						Returns HTML code used in debugging the information comming accross within the 
+						posted form data.</p>
+				</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>File Name: clsField.asp<br>
+			Class Name: <STRONG>clsField</STRONG>
+			<br>
+		</p>
+		<table width="100%" border="1" id="TABLE1">
+			<tr>
+				<td>
+					property</td>
+				<td>
+					Name
+				</td>
+				<td>
+					<p>
+						Name of the field defined in form</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					FileDir
+				</td>
+				<td>
+					<p>
+						Directory that file existed in on visitors computer</p>
+					<p>
+						C:\Documents and Settings\lmoten\Desktop</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					<p>FileExt</p>
+				</td>
+				<td>
+					<p>
+						Extension of the file</p>
+					<p>
+						GIF, JPG, BMP, EXE, COM, VBS, Etc.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>property</td>
+				<td>
+					FileName
+				</td>
+				<td>
+					<p>
+						Name of the file</p>
+					<p>
+						Photo.gif</p>
+				</td>
+			</tr>
+			<tr>
+				<td>property</td>
+				<td>
+					ContentType
+				</td>
+				<td>
+					<p>
+						Content / Mime type of file</p>
+					<p>
+						image/gif</p>
+				</td>
+			</tr>
+			<tr>
+				<td>property</td>
+				<td>
+					Length
+				</td>
+				<td>
+					<p>
+						Byte size of the value or binary data</p>
+				</td>
+			</tr>
+			<tr>
+				<td>property</td>
+				<td>
+					DataStart
+				</td>
+				<td>
+					<p>
+						Index where field data begins in posted data</p>
+				</td>
+			</tr>
+			<tr>
+				<td>property</td>
+				<td>
+					DataLength&nbsp;
+				</td>
+				<td>
+					<p>
+						Binary Length of field data within posted data</p>
+				</td>
+			</tr>
+			<tr>
+				<td>read-only property</td>
+				<td>
+					BLOB&nbsp;
+				</td>
+				<td>
+					<p>
+						Same thing as BinaryData but with a shorter name.&nbsp; Added to help prevent 
+						confusion with database access.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>read-only property</td>
+				<td>
+					BinaryData&nbsp;
+				</td>
+				<td>
+					<p>
+						Contents of files binary data.&nbsp; (Integer SubType Array)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					function</td>
+				<td>
+					BinaryAsText&nbsp;
+				</td>
+				<td>
+					<p>
+						Converts binary data into unicode format.&nbsp; Useful when you expect the user 
+						to upload a text file and you have the need to interact with it.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					sub</td>
+				<td>
+					SaveAs(fileName)
+				</td>
+				<td>
+					<p>
+						Saves binary data to a specified path.&nbsp; This will overwrite any existing 
+						files.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					FilePath&nbsp;
+				</td>
+				<td>
+					<p>
+						Path that file was sent from on visitors computer</p>
+				</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>File Name: clsProgress.asp<BR>
+			Class Name: <STRONG>clsProgress</STRONG>&nbsp;
+		</p>
+		<table width="100%" border="1" id="TABLE1">
+			<tr>
+				<td>
+					property</td>
+				<td>
+					TotalBytes
+				</td>
+				<td>
+					<p>
+						Number of bytes that visitor has uploaded to the webserver.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					BytesReceived
+				</td>
+				<td>
+					<p>
+						Number of bytes that the server has received from the visitor</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					UploadStarted
+				</td>
+				<td>
+					<p>
+						Time that the upload process began</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					UploadCompleted
+				</td>
+				<td>
+					<p>
+						Time that the upload process was completed</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					LastActive
+				</td>
+				<td>
+					<p>
+						Time that the buffer was last read from.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					function</td>
+				<td>
+					Load
+				</td>
+				<td>
+					<p>
+						Returns boolean determining if the information could be loaded.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					sub</td>
+				<td>
+					Save
+				</td>
+				<td>
+					<p>
+						Saves upload information into a temporary file</p>
+				</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>Globals - defined within clsUpload.asp.&nbsp; Page Scope accessable to 
+			clsUpload, clsFile, and clsProgress.
+		</p>
+		<table width="100%" border="1" id="Table2">
+			<tr>
+				<td>read-only property</td>
+				<td>
+					FileSystemObjectEnabled
+				</td>
+				<td>
+					<p>
+						Determines if the file system object may be used.&nbsp; Some ISP's do not allow 
+						the use of the file system object, or only allow limited use.&nbsp; Set this 
+						value to false if it is causing problems.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>read-only property</td>
+				<td>
+					BufferSize
+				</td>
+				<td>
+					<p>
+						Defines the number of bytes to read at a time from the posted form data.&nbsp; 
+						Default value is 64 KB.&nbsp; Adjust this to fine-tune performance.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					property</td>
+				<td>
+					gBinaryData
+				</td>
+				<td>
+					<p>
+						bytes visitor sent to server with posted form data.</p>
+				</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>

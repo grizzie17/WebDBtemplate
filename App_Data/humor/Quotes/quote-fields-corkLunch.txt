@@ -1,0 +1,4 @@
+Some weasel took the cork out of my lunch.
+
+^{{picture wcfields.jpg}}
+{{i:-- W. C. Fields}}

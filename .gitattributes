@@ -1,0 +1,11 @@
+*	text=auto
+
+*.txt	text eol=crlf
+*.htm	text eol=crlf
+*.html	text eol=crlf
+*.asp	text eol=crlf
+*.aspx	text eol=crlf
+*.css	text eol=crlf
+*.js	text eol=crlf
+*.xml	text eol=crlf
+*.xslt	text eol=crlf

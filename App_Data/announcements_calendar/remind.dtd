@@ -1,0 +1,79 @@
+<!ELEMENT reminders ((event*)|(include?))>
+<!ELEMENT event ((date+, category*, style?, subject, location?, content?, comments?, author?)
+	| (subject, location?, content?, comments?, date+, category*, style?, author?)
+	| (date+, category*, subject, style?, location?, content?, comments?, author?))>
+	<!ATTLIST event id CDATA #IMPLIED>
+<!ELEMENT include EMPTY>
+	<!ATTLIST include href CDATA #REQUIRED>
+	<!ATTLIST include cache-file CDATA #IMPLIED>
+	<!ATTLIST include cache-interval CDATA #IMPLIED>
+	<!ATTLIST include cache-value CDATA #IMPLIED>
+	<!ATTLIST include cache-break-interval CDATA #IMPLIED>
+<!ELEMENT date (#PCDATA)>
+	<!ATTLIST date type (julian|single|daily|weekly|monthly|yearly|hebrew|keyword|season|moon) #REQUIRED>
+	<!--
+		julian = number
+		single = year month date
+		daily = (see below)
+		weekly = daynumbers (1=sun)
+		monthly = (see below)
+		yearly = (see below)
+		hebrew = (see below)
+		keyword = ( easter | paschal )
+		season = ( 0=equinox[mar] | 1=solstice[june] | 2=equinox[sep] | 3=solstice[dec] )
+		moon = ( 0=new | 1=first-quarter | 2=full | 3=last-quarter )
+	-->
+	<!ATTLIST date weekly #IMPLIED>
+	<!--
+		cycle day-list
+		
+		cycle: 0=every, 1=odd, 2=even
+		day-list: comma separated list of week-day numbers
+	-->
+	<!ATTLIST date monthly (dayn|wday) #IMPLIED>
+	<!--
+		dayn = cycle index date
+		wday = cycle index week-selector weekday
+
+		cycle: 1=every-month, 2=bimonthly, 3=quarterly, 6=semiannual
+		index: month within cycle
+	-->
+	<!ATTLIST date yearly (dayn|wday) #IMPLIED>
+	<!--
+		dayn = month date
+		wday = month week-selector weekday
+	-->
+	<!ATTLIST date hebrew (dayn|wday) #IMPLIED>
+	<!--
+		dayn = month date
+		wday = month week-selector weekday
+	-->
+	<!ATTLIST date offset CDATA #IMPLIED>
+	<!--
+		space delimeted tokens
+
+		# value		= add value to date
+		+ keyword	= on or after
+		++ keyword	= after
+		- keyword	= on or before
+		- - keyword	= before
+		~ keyword	= nearest
+		? keyword	= conditionally do the next token
+	-->
+	<!ATTLIST date duration CDATA #IMPLIED>
+	<!ATTLIST date duration-view CDATA #IMPLIED>
+	<!--
+		identifies which calendar views that the duration will be processed.
+		If this is missing then the duration is always processed.
+	-->
+	<!ATTLIST date pending CDATA #IMPLIED>
+	<!ATTLIST date time CDATA #IMPLIED>
+
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT style (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT comments (#PCDATA)>
+
+<!ELEMENT author (#PCDATA)>

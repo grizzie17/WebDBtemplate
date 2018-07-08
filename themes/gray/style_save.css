@@ -1,0 +1,493 @@
+
+
+body
+{
+	background-color: #FFFFFF;
+}
+
+th a:link
+{
+	color: #000066;
+}
+
+th a:visited
+{
+	color: #330033;
+}
+
+th a:hover
+{
+	color: #FF0000;
+}
+
+
+td.navigationtab img, td.navigationtabselected img
+{
+	display: block;
+}
+
+td.shoppingtab img, td.shoppingtabselected img
+{
+	display: block;
+}
+
+
+
+th
+{
+	font-weight: bold;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+h2
+{
+	color: #000000;
+	background-color: #FFCC66;
+	border-bottom: 3px solid #996600;
+}
+
+h3
+{
+	color: #999999;
+	border-bottom: 2px solid #999999;
+}
+
+
+
+
+A:link
+{
+	color: #000099;
+}
+
+A:active
+{
+	color: #660066;
+}
+
+A:visited
+{
+	color: #990099;
+}
+
+A:hover
+{
+	color: #FF0000;
+}
+
+
+
+.button
+{
+	color: #000066; 
+	font-weight: bold; 
+	border: 3px outset #3399CC; 
+	background-color: #FFCC66;
+	cursor: hand;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+.header
+{
+	color: #FFFFFF;
+	background-color: #990000;
+	background-image: url("bkg_header.jpg");
+	font-weight: bold; 
+	font-size: x-large;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+
+.navigationtabselected
+{
+	color:		#FFFFFF;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+
+.navigationtab
+{
+	color:		#FFFFFF;
+	font-size:	small;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+	/*display: block;*/
+}
+
+a:link.navigationtab, a:visited.navigationtab, a:active.navigationtab
+{
+	color:		#FFFFFF;
+	text-decoration: none;
+}
+
+a:hover.navigationtab
+{
+	color:		#FFFF00;
+	font-weight:	bold;
+	text-decoration: underline;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+.shoppingtab
+{
+	color:		#000099;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+	/*display: block;*/
+}
+
+a:link.shoppingtab, a:visited.shoppingtab, a:active.shoppingtab
+{
+	color:		#000099;
+	text-decoration: none;
+}
+
+a:hover.shoppingtab
+{
+	color:		#FF0000;
+	font-weight:	bold;
+	text-decoration: underline;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+.navigationsmall
+{
+	color:		#FFFFFF;
+	font-size: xx-small;
+	font-weight:	bold;
+	text-decoration: none;
+	font-family:	Arial,Helvetica,Verdana,sans-serif;
+}
+
+a:link.navigationsmall, a:visited.navigationsmall, a:active.navigationsmall
+{
+	color:		#FFFFFF;
+	text-decoration: none;
+}
+
+A:hover.navigationsmall
+{
+	color:		#FFFF00;
+	text-decoration: underline;
+}
+
+
+.required
+{
+	background-color: #FFEECC;
+}
+
+
+.stick
+{
+	font-family: Arial, sans-serif;
+}
+
+
+.gutter
+{
+	background-color:	#CCCCCC;
+}
+
+
+
+.small
+{
+	font-size: 80%;
+}
+
+.xsmall
+{
+	font-size: 65%;
+}
+
+#dynclock
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.SmileBody .htmlformattable
+{
+	color: black;
+	background-color: gold;
+	font-size: small;
+	font-family: Arial, sans-serif;
+	border-color: black;
+	text-align: center;
+}
+
+.NewsletterQuotables
+{
+	font-size: small;
+	font-family: Arial, sans-serif;
+}
+
+
+table.htmlformatsidebar table.htmlformattable
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+td.htmlformatsidebar table.htmlformattable td
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	padding-right: 4px;
+	font-size: small;
+}
+
+
+
+
+
+h3.htmlformat
+{
+	color: #660000;
+	background-color: #FFFFFF;
+	border-bottom: 3px solid #660000;
+}
+
+h4.htmlformat
+{
+	color: #CC9966;
+	border-bottom: 2px solid #CC9966;
+}
+
+h5.htmlformat
+{
+	color: #CC9966;
+	/*border-bottom: 1px solid #666666*/
+}
+
+h6.htmlformat
+{
+	color: #CC9966;
+	/*border-bottom: 1px solid #999999*/
+}
+
+
+
+.newsletter h3.htmlformat
+{
+	color: #990000;
+	background-color: #EEEEEE;
+}
+
+.newsletter h4.htmlformat
+{
+	color: #990000;
+	background-color: #EEEEEE;
+	padding: 5px;
+	/*border-top: 2px solid #990000;*/
+	border-bottom: 1px solid #990000;
+}
+
+
+td.htmlformatsidebar h4.htmlformat
+{
+	color: #CC9966;
+	background-color: #DDDDDD;
+	padding: 2px;
+	border-top: 0;
+	border-bottom: 1px solid #CC9966;
+}
+
+
+
+
+
+
+
+hr.htmlformat
+{
+	color: #FFEECC;
+}
+
+.htmlformatcaption
+{
+	color: #996633;
+	font-size:	xx-small;
+	/*font-family: Arial,Helvetica,Verdana,sans-serif;*/
+}
+
+table.htmlformatpullquote
+{
+	border-top: 4px solid #FFCC00;
+	border-bottom: 4px solid #FFCC00;
+	border-left: 4px solid #FFEECC;
+	border-right: 4px solid #FFEECC;
+	margin: 2px;
+	page-break-inside: avoid;
+}
+
+th.htmlformatpullquote
+{
+	background-color: #FFEECC;	/*#FFDD99;*/
+	font-style: italic;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	border: none;
+	page-break-inside: avoid;
+	text-align: center;
+}
+
+table.htmlformatsidebar
+{
+	border: 1px solid #CC9966;
+	background-color: #EEEEEE;
+	position: relative;
+	z-index: 100;
+}
+
+td.htmlformatsidebar
+{
+	background-color: #EEEEEE;
+	font-size: small;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	padding: 4px;
+	border: none;
+}
+
+table.htmlformatsidebar p
+{
+	page-break-inside: avoid;
+}
+
+
+.galleryheader
+{
+	text-align: left;
+	/*background-color: #EEEEEE;
+	position: relative;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#FFFFDD99', EndColorStr='#00FFDD99');*/
+}
+
+.announcementstitle a:link
+{
+	color: #000066;
+}
+
+.announcementstitle a:visited
+{
+	color: #330033;
+}
+
+.announcementstitle a:hover
+{
+	color: #FF0000;
+}
+
+
+
+.announcementstitle
+{
+	padding: 4px;
+	/*border: 1px solid #FFCC00;*/
+	background-color: #FFEEAA;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: sans-serif;
+	background-image: url(header_bkg.jpg);
+}
+
+
+.SafetyTips a, .SafetyTips a:link, .SafetyTips a:visited
+{
+	color: #006699;
+}
+
+.SafetyTips a:hover
+{
+	color: #CC0000;
+}
+
+th.SafetyTips
+{
+	background-color: #99FF99;
+	background-image: url(header_bkg_safety.jpg);
+	text-align: left;
+}
+
+td.SafetyTips
+{
+	background-color: #CCFFCC;
+}
+
+td.SafetyTips hr.htmlformat
+{
+	color: #99CC99;
+}
+
+td.SafetyTips h4.htmlformat
+{
+	color: #006600;
+	border-bottom: 2px solid #99CC99;
+}
+
+td.SafetyTips h5.htmlformat
+{
+	color: #339933;
+}
+
+.SmileBody h5.htmlformat
+{
+	color: #996600;
+}
+
+.homepage ul.htmlformat
+{
+	margin-left: 1em;
+}
+
+
+.rssama
+{
+	font-size: x-small;
+	font-family: Arial, sans-serif;
+}
+
+.rssama .announcementstitle
+{
+	font-size: x-small;
+}
+
+
+.rssTitle
+{
+	text-size: x-small;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+div.rssItem
+{
+	margin-top: 1em;
+}
+
+.rssItem p
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}

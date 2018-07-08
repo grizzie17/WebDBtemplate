@@ -1,0 +1,175 @@
+﻿
+.phpusers
+{
+	display: none;
+	position: relative;
+	visibility: hidden;
+}
+
+
+
+.pobox
+{
+	color: #C0C0C0;
+	font-size: smaller;
+}
+
+
+
+
+.dial
+{
+	color: #C0C0C0;
+	font-size: smaller;
+}
+
+
+
+
+
+.dialed
+{
+	white-space: nowrap;
+}
+
+
+.dialed a, .dialed a:link, .dialed a:visited, .dialed a:active
+{
+	text-decoration: none;
+}
+
+
+.SmileBody ul
+{
+	padding-left: 0;
+	margin-left: 1.5em;
+}
+
+
+td.SmileBody:first-child p,
+td.SmileBody:first-child h3,
+td.SmileBody:first-child h4,
+td.SmileBody:first-child h5
+{
+	margin-top: 0;
+}
+
+td.SafetyTips:first-child p,
+td.SafetyTips:first-child h3,
+td.SafetyTips:first-child h4,
+td.SafetyTips:first-child h5
+{
+	margin-top: 0;
+}
+
+
+
+
+.homepage ul.htmlformat
+{
+	padding-left: 0;
+	margin-left: 1.5em;
+}
+
+
+
+#pageblock
+{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1024px;
+	min-width: 690px;
+	width: expression( 1025 < document.body.clientWidth ? "1024px": document.body.clientWidth < 689 ? "690px": "100%" );
+}
+
+
+
+
+
+#tableoutercolset
+{
+	width: 100%;
+	table-layout: fixed;
+	border-left: 1px silver solid;
+}
+
+#colfixed1, #coldynamic, #colfixed2
+{
+	position: relative;
+	vertical-align: top;
+	border-right: 1px silver solid;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+
+
+
+
+
+#colfixed1
+{
+	width: 304px;
+	min-width: 304px;
+	max-width: 320px;
+	/*width: expression( 301 < document.colfixed1.clientWidth ? "300px" : document.colfixed1.clientWidth < 279 ? "280px" : "auto" );*/
+}
+
+
+#coldynamic
+{
+	width: auto;
+	min-width: 220px;
+	/*width: expression( document.coldynamic.clientWidth < 219 ? "220px" : "auto" );*/
+}
+
+
+
+#colfixed2
+{
+	width: 250px;
+	min-width: 250px;
+	max-width: 320px;
+	/*width: expression( 201 < document.colfixed2.clientWidth ? "200px" : document.colfixed2.clientWidth < 189 ? "190px": "auto" );*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.noprint
+{
+}
+
+
+@media print
+{
+
+	.TabGroupVert
+	{
+		display: none;
+	}
+
+	.noprint
+	{
+		display: none;
+	}
+
+	.EmailNotification
+	{
+		display: none;
+	}
+
+}
+
+
+
+

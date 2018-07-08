@@ -1,0 +1,5 @@
+Painting is just another way of keeping a diary.
+
+^{{picture PabloPicasso.jpg}}
+{{i:-- Pablo Picasso}}
+{{small:(1881-1973)}}

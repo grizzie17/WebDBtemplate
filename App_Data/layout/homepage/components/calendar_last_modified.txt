@@ -1,0 +1,15 @@
+﻿''<head>
+''<title>Calendar Last Modified</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Display the date/time the calendar was last updated">
+''</head>
+
+
+IF ISDATE( dRemindLastModified ) THEN
+
+%>
+<p style="color:#999999; font-family: sans-serif; font-size: xx-small;">Calendar 
+Updated: <%=DATEADD("h", g_nServerTimeZoneOffset, dRemindLastModified)%></p>
+<%
+
+END IF

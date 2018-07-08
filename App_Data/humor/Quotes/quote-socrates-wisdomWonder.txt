@@ -1,0 +1,4 @@
+Wisdom begins in wonder.
+
+^{{picture Socrates.jpg}}
+{{i:-- Socrates}}

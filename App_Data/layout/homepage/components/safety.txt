@@ -1,0 +1,8 @@
+﻿''<head>
+''<title>Motorcycle safety tips</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Tips and reminders that everyone needs for safe riding">
+''</head>
+
+
+outputDynamic "safety", "loadextras.asp?q=safety&t=30", "safety.htm", "1.25", "n", 30, "d"

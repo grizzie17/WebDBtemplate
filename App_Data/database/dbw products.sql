@@ -1,0 +1,367 @@
+-- DBWScript v2.3
+-- Database: D:\WebWork\Inetpub\wwwroot\dbDrivenTemplate\App_Data\database\Copy of Products.mdb
+
+CREATE TABLE [Brands] (
+	[BrandID] AUTOINCREMENT,
+	[Name] TEXT(50) WITH COMPRESSION,
+	[Description] MEMO WITH COMPRESSION,
+	[Website] MEMO WITH COMPRESSION,
+	[Logo] TEXT(40) WITH COMPRESSION,
+	[Rating] LONG DEFAULT 0,
+	[Disabled] BIT NOT NULL,
+	CONSTRAINT [BrandID] UNIQUE ([BrandID]),
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([BrandID])
+);
+ALTER TABLE [Brands] ALLOW ZERO LENGTH [Name];
+ALTER TABLE [Brands] ALLOW ZERO LENGTH [Description];
+ALTER TABLE [Brands] ALLOW ZERO LENGTH [Website];
+ALTER TABLE [Brands] DENY ZERO LENGTH [Logo];
+CREATE TABLE [Categories] (
+	[CategoryID] AUTOINCREMENT,
+	[Name] TEXT(50) WITH COMPRESSION NOT NULL,
+	[ShortName] TEXT(30) WITH COMPRESSION,
+	[ShortDesc] MEMO WITH COMPRESSION,
+	[Icon] TEXT(40) WITH COMPRESSION,
+	[Disabled] BIT NOT NULL DEFAULT 0,
+	[SortName] TEXT(20) WITH COMPRESSION,
+	CONSTRAINT [CategoryID] UNIQUE ([CategoryID]),
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([CategoryID])
+);
+ALTER TABLE [Categories] DENY ZERO LENGTH [Name];
+ALTER TABLE [Categories] DENY ZERO LENGTH [ShortName];
+ALTER TABLE [Categories] ALLOW ZERO LENGTH [ShortDesc];
+ALTER TABLE [Categories] DENY ZERO LENGTH [Icon];
+ALTER TABLE [Categories] ALLOW ZERO LENGTH [SortName];
+CREATE TABLE [Config] (
+	[RID] AUTOINCREMENT,
+	[Domain] TEXT(255) WITH COMPRESSION NOT NULL,
+	[SiteName] TEXT(255) WITH COMPRESSION,
+	[SiteTitle] TEXT(255) WITH COMPRESSION,
+	[SiteOrgDesignation] TEXT(255) WITH COMPRESSION,
+	[SiteLocation] TEXT(255) WITH COMPRESSION,
+	[CopyrightStartYear] LONG,
+	[MailServer] TEXT(255) WITH COMPRESSION,
+	[MailboxUpcomingEvents] TEXT(255) WITH COMPRESSION,
+	[MailboxNewsletter] TEXT(255) WITH COMPRESSION,
+	[MailUser] TEXT(255) WITH COMPRESSION,
+	[MailPW] TEXT(255) WITH COMPRESSION,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID])
+);
+ALTER TABLE [Config] DENY ZERO LENGTH [Domain];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [SiteName];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [SiteTitle];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [SiteOrgDesignation];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [SiteLocation];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [MailServer];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [MailboxUpcomingEvents];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [MailboxNewsletter];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [MailUser];
+ALTER TABLE [Config] ALLOW ZERO LENGTH [MailPW];
+CREATE TABLE [Gallery] (
+	[RID] AUTOINCREMENT,
+	[Title] MEMO WITH COMPRESSION NOT NULL,
+	[EventDate] DATETIME,
+	[Description] TEXT(255) WITH COMPRESSION,
+	[Parent] LONG,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+ALTER TABLE [Gallery] DENY ZERO LENGTH [Title];
+ALTER TABLE [Gallery] ALLOW ZERO LENGTH [Description];
+CREATE TABLE [GalleryPictures] (
+	[RID] AUTOINCREMENT,
+	[GalleryID] LONG NOT NULL,
+	[File] TEXT(40) WITH COMPRESSION,
+	[Caption] TEXT(255) WITH COMPRESSION,
+	[Order] LONG,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID])
+);
+ALTER TABLE [GalleryPictures] ALLOW ZERO LENGTH [File];
+ALTER TABLE [GalleryPictures] ALLOW ZERO LENGTH [Caption];
+CREATE TABLE [GalleryShuffle] (
+	[RID] AUTOINCREMENT,
+	[GalleryPicture] LONG NOT NULL,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID])
+);
+CREATE TABLE [KeywordPageMap] (
+	[RID] AUTOINCREMENT,
+	[KeywordID] LONG NOT NULL,
+	[PageID] LONG NOT NULL,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+CREATE TABLE [Keywords] (
+	[RID] AUTOINCREMENT,
+	[Keyword] TEXT(64) WITH COMPRESSION NOT NULL,
+	[Disabled] BIT NOT NULL DEFAULT 0,
+	CONSTRAINT [Keyword] UNIQUE ([Keyword]),
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+ALTER TABLE [Keywords] DENY ZERO LENGTH [Keyword];
+CREATE TABLE [Orders] (
+	[OrderID] AUTOINCREMENT,
+	[UserID] LONG DEFAULT 0,
+	[Cookie] TEXT(40) WITH COMPRESSION NOT NULL,
+	[DateCreated] DATETIME,
+	[Processed] BIT NOT NULL,
+	[ProductID] LONG DEFAULT 0,
+	[Item] TEXT(40) WITH COMPRESSION NOT NULL,
+	[Qty] LONG NOT NULL DEFAULT 0,
+	[Price] CURRENCY DEFAULT 0,
+	[Discount] TEXT(20) WITH COMPRESSION,
+	[PartNo] TEXT(20) WITH COMPRESSION,
+	[Shipping] CURRENCY DEFAULT 0,
+	[Weight] LONG DEFAULT 0,
+	[URL] MEMO WITH COMPRESSION,
+	[Image] MEMO WITH COMPRESSION,
+	[Referer] MEMO WITH COMPRESSION,
+	[Tax] LONG DEFAULT 0,
+	[SendTo] MEMO WITH COMPRESSION,
+	[AccountingCategory] TEXT(30) WITH COMPRESSION,
+	[Options] MEMO WITH COMPRESSION,
+	[ShipsInOwnBox] BIT NOT NULL,
+	CONSTRAINT [OrderID] UNIQUE ([OrderID]),
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([OrderID])
+);
+ALTER TABLE [Orders] DENY ZERO LENGTH [Cookie];
+ALTER TABLE [Orders] DENY ZERO LENGTH [Item];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [Discount];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [PartNo];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [URL];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [Image];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [Referer];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [SendTo];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [AccountingCategory];
+ALTER TABLE [Orders] ALLOW ZERO LENGTH [Options];
+CREATE TABLE [PageListMap] (
+	[RID] AUTOINCREMENT,
+	[TabID] LONG NOT NULL,
+	[ListID] LONG NOT NULL,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID])
+);
+CREATE TABLE [PageListOptions] (
+	[RID] AUTOINCREMENT,
+	[ListName] TEXT(255) WITH COMPRESSION NOT NULL,
+	[Details] TEXT(255) WITH COMPRESSION,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+ALTER TABLE [PageListOptions] DENY ZERO LENGTH [ListName];
+ALTER TABLE [PageListOptions] ALLOW ZERO LENGTH [Details];
+CREATE TABLE [Pages] (
+	[RID] AUTOINCREMENT,
+	[PageName] TEXT(64) WITH COMPRESSION NOT NULL,
+	[SortName] TEXT(32) WITH COMPRESSION,
+	[Format] TEXT(4) WITH COMPRESSION,
+	[Title] TEXT(128) WITH COMPRESSION NOT NULL,
+	[Description] TEXT(255) WITH COMPRESSION,
+	[Body] MEMO WITH COMPRESSION,
+	[DateCreated] DATETIME,
+	[DateModified] DATETIME,
+	[Category] LONG,
+	[Picture] TEXT(40) WITH COMPRESSION,
+	[Disabled] BIT NOT NULL DEFAULT 0,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+ALTER TABLE [Pages] DENY ZERO LENGTH [PageName];
+ALTER TABLE [Pages] ALLOW ZERO LENGTH [SortName];
+ALTER TABLE [Pages] ALLOW ZERO LENGTH [Format];
+ALTER TABLE [Pages] DENY ZERO LENGTH [Title];
+ALTER TABLE [Pages] ALLOW ZERO LENGTH [Description];
+ALTER TABLE [Pages] ALLOW ZERO LENGTH [Body];
+ALTER TABLE [Pages] ALLOW ZERO LENGTH [Picture];
+CREATE TABLE [Pictures] (
+	[PictureID] AUTOINCREMENT,
+	[PageID] LONG NOT NULL DEFAULT 0,
+	[Label] TEXT(40) WITH COMPRESSION NOT NULL,
+	[File] TEXT(40) WITH COMPRESSION,
+	CONSTRAINT [PictureID] UNIQUE ([PictureID]),
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([PictureID])
+);
+ALTER TABLE [Pictures] DENY ZERO LENGTH [Label];
+ALTER TABLE [Pictures] ALLOW ZERO LENGTH [File];
+CREATE TABLE [Products] (
+	[RID] AUTOINCREMENT,
+	[PageID] LONG NOT NULL,
+	[ProdID] TEXT(32) WITH COMPRESSION,
+	[Brand] LONG DEFAULT 0,
+	[UnitPrice] CURRENCY DEFAULT 0,
+	[ListPrice] CURRENCY DEFAULT 0,
+	[MAPrice] CURRENCY DEFAULT 0,
+	[Cost] CURRENCY DEFAULT 0,
+	[HideQuantity] BIT NOT NULL DEFAULT 0,
+	[Options] MEMO WITH COMPRESSION,
+	[StockCount] LONG DEFAULT 0,
+	[Push] LONG DEFAULT 0,
+	[ReorderLevel] LONG DEFAULT 0,
+	[Weight] DECIMAL(18, 0) DEFAULT 0,
+	[LargePicture] TEXT(30) WITH COMPRESSION,
+	[Thumbnail] TEXT(30) WITH COMPRESSION,
+	[URL] MEMO WITH COMPRESSION,
+	[AccountingCategory] TEXT(30) WITH COMPRESSION,
+	[ShipsInOwnBox] BIT NOT NULL,
+	[MaxQty] LONG DEFAULT 0,
+	[Disabled] BIT NOT NULL,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+ALTER TABLE [Products] DENY ZERO LENGTH [ProdID];
+ALTER TABLE [Products] ALLOW ZERO LENGTH [Options];
+ALTER TABLE [Products] ALLOW ZERO LENGTH [LargePicture];
+ALTER TABLE [Products] ALLOW ZERO LENGTH [Thumbnail];
+ALTER TABLE [Products] ALLOW ZERO LENGTH [URL];
+ALTER TABLE [Products] ALLOW ZERO LENGTH [AccountingCategory];
+CREATE TABLE [Schedules] (
+	[RID] AUTOINCREMENT,
+	[PageID] LONG NOT NULL,
+	[DateBegin] DATETIME,
+	[DateEnd] DATETIME,
+	[DateEvent] DATETIME,
+	[Disabled] BIT NOT NULL DEFAULT 0,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+CREATE TABLE [Specials] (
+	[ProdRID] LONG DEFAULT 0,
+	[BeginDate] DATETIME,
+	[EndDate] DATETIME,
+	[SpecialType] LONG DEFAULT 0,
+	[SpecialPrice] CURRENCY DEFAULT 0,
+	[Description] MEMO WITH COMPRESSION,
+	[Disabled] BIT NOT NULL,
+	[Push] LONG DEFAULT 0,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([ProdRID])
+);
+ALTER TABLE [Specials] DENY ZERO LENGTH [Description];
+CREATE TABLE [TabCategoryMap] (
+	[RID] AUTOINCREMENT,
+	[TabID] LONG DEFAULT 0,
+	[CategoryID] LONG DEFAULT 0,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([RID]),
+	CONSTRAINT [RID] UNIQUE ([RID])
+);
+CREATE TABLE [Tabs] (
+	[TabID] AUTOINCREMENT,
+	[Name] TEXT(50) WITH COMPRESSION,
+	[SortName] TEXT(50) WITH COMPRESSION,
+	[Description] MEMO WITH COMPRESSION,
+	[Icon] TEXT(40) WITH COMPRESSION,
+	[Picture] TEXT(40) WITH COMPRESSION,
+	[Background] TEXT(40) WITH COMPRESSION,
+	[Disabled] BIT NOT NULL,
+	CONSTRAINT [PrimaryKey] PRIMARY KEY ([TabID]),
+	CONSTRAINT [TabID] UNIQUE ([TabID])
+);
+ALTER TABLE [Tabs] ALLOW ZERO LENGTH [Name];
+ALTER TABLE [Tabs] ALLOW ZERO LENGTH [SortName];
+ALTER TABLE [Tabs] ALLOW ZERO LENGTH [Description];
+ALTER TABLE [Tabs] DENY ZERO LENGTH [Icon];
+ALTER TABLE [Tabs] DENY ZERO LENGTH [Picture];
+ALTER TABLE [Tabs] DENY ZERO LENGTH [Background];
+CREATE TABLE [Version] (
+	[Major] LONG NOT NULL,
+	[Minor] LONG,
+	[Fix] LONG,
+	CONSTRAINT [Index_5790E1A2_C047_4C26] PRIMARY KEY ([Major])
+);
+CREATE INDEX [RID]
+	ON [Config] ([RID]);
+CREATE INDEX [GalleryID]
+	ON [GalleryPictures] ([GalleryID]);
+CREATE INDEX [RID]
+	ON [GalleryPictures] ([RID]);
+CREATE INDEX [RID]
+	ON [GalleryShuffle] ([RID]);
+CREATE INDEX [KeywordID]
+	ON [KeywordPageMap] ([KeywordID]);
+CREATE INDEX [PageID]
+	ON [KeywordPageMap] ([PageID]);
+CREATE INDEX [Cookie]
+	ON [Orders] ([Cookie]);
+CREATE INDEX [ProductID]
+	ON [Orders] ([ProductID]);
+CREATE INDEX [UserID]
+	ON [Orders] ([UserID]);
+CREATE INDEX [PageListMapTabID]
+	ON [PageListMap] ([TabID]);
+CREATE INDEX [RID]
+	ON [PageListMap] ([RID]);
+CREATE INDEX [Category]
+	ON [Pages] ([Category]);
+CREATE INDEX [PageName]
+	ON [Pages] ([PageName]);
+CREATE INDEX [Label]
+	ON [Pictures] ([Label]);
+CREATE INDEX [ProductID]
+	ON [Pictures] ([PageID]);
+CREATE INDEX [Brand]
+	ON [Products] ([Brand]);
+CREATE INDEX [ProdID]
+	ON [Products] ([ProdID]);
+CREATE INDEX [PageID]
+	ON [Schedules] ([PageID]);
+CREATE INDEX [ProdID]
+	ON [Specials] ([ProdRID]);
+CREATE INDEX [CategoryID]
+	ON [TabCategoryMap] ([CategoryID]);
+CREATE INDEX [TabID]
+	ON [TabCategoryMap] ([TabID]);
+CREATE INDEX [SortName]
+	ON [Tabs] ([SortName]);
+ALTER TABLE [GalleryPictures]
+	ADD CONSTRAINT [GalleryGalleryPictures]
+	FOREIGN KEY NO INDEX ([GalleryID]) REFERENCES
+		[Gallery] ([RID]);
+ALTER TABLE [KeywordPageMap]
+	ADD CONSTRAINT [KeywordsKeywordPageMap]
+	FOREIGN KEY NO INDEX ([KeywordID]) REFERENCES
+		[Keywords] ([RID]);
+ALTER TABLE [KeywordPageMap]
+	ADD CONSTRAINT [PagesKeywordPageMap]
+	FOREIGN KEY NO INDEX ([PageID]) REFERENCES
+		[Pages] ([RID]);
+ALTER TABLE [PageListMap]
+	ADD CONSTRAINT [PageListOptionsPageListMap]
+	FOREIGN KEY NO INDEX ([ListID]) REFERENCES
+		[PageListOptions] ([RID]);
+ALTER TABLE [PageListMap]
+	ADD CONSTRAINT [TabsPageListMap]
+	FOREIGN KEY NO INDEX ([TabID]) REFERENCES
+		[Tabs] ([TabID]);
+ALTER TABLE [Pages]
+	ADD CONSTRAINT [CategoriesPages]
+	FOREIGN KEY NO INDEX ([Category]) REFERENCES
+		[Categories] ([CategoryID]);
+ALTER TABLE [Pictures]
+	ADD CONSTRAINT [PagesPictures]
+	FOREIGN KEY NO INDEX ([PageID]) REFERENCES
+		[Pages] ([RID]);
+ALTER TABLE [Products]
+	ADD CONSTRAINT [BrandsProducts]
+	FOREIGN KEY NO INDEX ([Brand]) REFERENCES
+		[Brands] ([BrandID]);
+ALTER TABLE [Products]
+	ADD CONSTRAINT [PagesProducts]
+	FOREIGN KEY NO INDEX ([PageID]) REFERENCES
+		[Pages] ([RID]);
+ALTER TABLE [Products]
+	ADD CONSTRAINT [SpecialsProducts]
+	FOREIGN KEY NO INDEX ([RID]) REFERENCES
+		[Specials] ([ProdRID]);
+ALTER TABLE [Schedules]
+	ADD CONSTRAINT [PagesSchedules]
+	FOREIGN KEY NO INDEX ([PageID]) REFERENCES
+		[Pages] ([RID]);
+ALTER TABLE [TabCategoryMap]
+	ADD CONSTRAINT [CategoriesTabCategoryMap]
+	FOREIGN KEY NO INDEX ([CategoryID]) REFERENCES
+		[Categories] ([CategoryID]);
+ALTER TABLE [TabCategoryMap]
+	ADD CONSTRAINT [TabsTabCategoryMap]
+	FOREIGN KEY NO INDEX ([TabID]) REFERENCES
+		[Tabs] ([TabID]);
+CREATE VIEW [Tabs Query] AS SELECT Tabs.TabID, Tabs.Name, Tabs.SortName
+FROM Tabs;
+

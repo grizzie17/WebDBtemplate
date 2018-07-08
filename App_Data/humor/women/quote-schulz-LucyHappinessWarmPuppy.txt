@@ -1,0 +1,5 @@
+Happiness is a warm puppy.
+
+^{{picture Lucy.gif}}
+{{i:-- Lucy Van Pelt}}
+{{small:Charles M. Schulz}}

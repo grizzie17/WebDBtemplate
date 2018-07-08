@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<reminders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="remind.xsd">
+	<event id="e2008110416400603">
+		<date type="yearly" yearly="dayn">01 19</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Hiram (H) Bass' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400605">
+		<date type="yearly" yearly="dayn">09 29</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Jeff Brownback's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400606">
+		<date type="yearly" yearly="dayn">12 14</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Stephanie Brownback's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400607">
+		<date type="yearly" yearly="dayn">03 13</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Bob Caryl's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400609">
+		<date type="yearly" yearly="dayn">09 29</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Mike Chapman's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400610">
+		<date type="yearly" yearly="dayn">08 17</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Alice Chapman's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400612">
+		<date type="yearly" yearly="dayn">05 24</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Richard Chapman's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400613">
+		<date type="yearly" yearly="dayn">07 28</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Susan (Sue) Chapman's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400614">
+		<date type="yearly" yearly="dayn">12 01</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Wayne Davis' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400615">
+		<date type="yearly" yearly="dayn">08 31</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[JoAnn Davis' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400616">
+		<date type="yearly" yearly="dayn">02 18</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Greg Dempsey's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400617">
+		<date type="yearly" yearly="dayn">03 20</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Renee Dempsey's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400618">
+		<date type="yearly" yearly="dayn">07 01</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Rich Follett's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400619">
+		<date type="yearly" yearly="dayn">10 03</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Nancy Follett's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400620">
+		<date type="yearly" yearly="dayn">11 13</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Roy Fosnight Jr's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400621">
+		<date type="yearly" yearly="dayn">07 08</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Anita Fosnight's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400623">
+		<date type="yearly" yearly="dayn">11 08</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Peggy Foster's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400624">
+		<date type="yearly" yearly="dayn">12 15</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Walter Gersch's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400625">
+		<date type="yearly" yearly="dayn">10 23</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Dennis Greer's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400627">
+		<date type="yearly" yearly="dayn">10 17</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[John Griswold's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400628">
+		<date type="yearly" yearly="dayn">12 20</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Elizabeth Griswold's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400629">
+		<date type="yearly" yearly="dayn">10 12</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Don Grundt's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400630">
+		<date type="yearly" yearly="dayn">08 21</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Ellen Grundt's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400632">
+		<date type="yearly" yearly="dayn">04 20</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Sue Harris' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400633">
+		<date type="yearly" yearly="dayn">09 18</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Justin Harris' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400634">
+		<date type="yearly" yearly="dayn">07 05</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Steven Hollingsworth's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400635">
+		<date type="yearly" yearly="dayn">02 17</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Tammy Hollingsworth's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400636">
+		<date type="yearly" yearly="dayn">09 19</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Avery Howard's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400638">
+		<date type="yearly" yearly="dayn">09 18</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Ben Jennings' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400639">
+		<date type="yearly" yearly="dayn">11 07</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Marty Knapp's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400640">
+		<date type="yearly" yearly="dayn">05 20</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Lisa Knapp's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400641">
+		<date type="yearly" yearly="dayn">06 29</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Jacob (Jake) Lawyer's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400644">
+		<date type="yearly" yearly="dayn">05 21</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Marc Mahanna's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400645">
+		<date type="yearly" yearly="dayn">08 16</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Ashley Mahanna's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400647">
+		<date type="yearly" yearly="dayn">11 27</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Serge M'Sadoques' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400648">
+		<date type="yearly" yearly="dayn">06 26</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Barbara M'Sadoques' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400649">
+		<date type="yearly" yearly="dayn">04 24</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Bill Nelson's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400651">
+		<date type="yearly" yearly="dayn">10 28</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Tom Newby's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400652">
+		<date type="yearly" yearly="dayn">05 05</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Nancy Newby's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400653">
+		<date type="yearly" yearly="dayn">08 05</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Don Peck's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400654">
+		<date type="yearly" yearly="dayn">01 02</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Beverly Peck's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400655">
+		<date type="yearly" yearly="dayn">10 06</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Jim Robinson's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400656">
+		<date type="yearly" yearly="dayn">03 16</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Carol Robinson's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400657">
+		<date type="yearly" yearly="dayn">11 24</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Bruce Shelton's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400658">
+		<date type="yearly" yearly="dayn">01 29</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Beth Shelton's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400660">
+		<date type="yearly" yearly="dayn">06 24</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Bonnie Southerland's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400661">
+		<date type="yearly" yearly="dayn">03 06</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Ron Thomas' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400662">
+		<date type="yearly" yearly="dayn">11 11</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Don Watts' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400663">
+		<date type="yearly" yearly="dayn">08 02</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Burma Watts' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400664">
+		<date type="yearly" yearly="dayn">09 27</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Betty Werman's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400666">
+		<date type="yearly" yearly="dayn">07 21</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Faye Richards-Williams' Birthday]]></subject>
+	</event>
+	<event id="e2008110416400667">
+		<date type="yearly" yearly="dayn">11 01</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Joye Williamson's Birthday]]></subject>
+	</event>
+	<event id="e2008110416400668">
+		<date type="yearly" yearly="dayn">11 23</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Roger & Peggy Allen's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400669">
+		<date type="yearly" yearly="dayn">08 09</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Hiram (H) & Lisa Bass' Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400673">
+		<date type="yearly" yearly="dayn">10 15</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Wayne & JoAnn Davis' Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400674">
+		<date type="yearly" yearly="dayn">07 26</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Greg & Renee Dempsey's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400675">
+		<date type="yearly" yearly="dayn">08 15</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Rich & Nancy Follett's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400676">
+		<date type="yearly" yearly="dayn">10 19</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Roy & Anita Fosnight's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400677">
+		<date type="yearly" yearly="dayn">10 02</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[David & Peggy Foster's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400679">
+		<date type="yearly" yearly="dayn">01 17</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[John & Elizabeth Griswold's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400680">
+		<date type="yearly" yearly="dayn">09 19</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Don & Ellen Grundt's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400681">
+		<date type="yearly" yearly="dayn">10 12</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Randy & Sue Harris' Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400682">
+		<date type="yearly" yearly="dayn">06 23</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Steven & Tammy Hollingsworth's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400683">
+		<date type="yearly" yearly="dayn">04 11</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Marty & Lisa Knapp's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400684">
+		<date type="yearly" yearly="dayn">08 09</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Jacob (Jake) & Kathy Lawyer's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400685">
+		<date type="yearly" yearly="dayn">06 09</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Marc & Ashley Mahanna's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400687">
+		<date type="yearly" yearly="dayn">07 06</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Bill & Bonnie Nelson's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400688">
+		<date type="yearly" yearly="dayn">12 18</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Tom & Nancy Newby's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400689">
+		<date type="yearly" yearly="dayn">07 31</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Don & Beverly Peck's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400691">
+		<date type="yearly" yearly="dayn">01 26</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Bruce & Beth Shelton's Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400693">
+		<date type="yearly" yearly="dayn">06 19</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Don & Burma Watts' Anniversary]]></subject>
+	</event>
+	<event id="e2008110416400694">
+		<date type="yearly" yearly="dayn">10 02</date>
+		<category>birthday</category>
+		<style>birthday</style>
+		<subject><![CDATA[Jimmy Williams' & Faye Richards-Williams' Anniversary]]></subject>
+	</event>
+</reminders>

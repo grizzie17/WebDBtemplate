@@ -1,0 +1,6 @@
+It's a dangerous business going out your front door.
+
+^{{picture bilbo.jpg}}
+{{i:-- Bilbo Baggins}}
+{{small:(J.R.R. Tolkien)}}
+{{small:The Fellowship of the Ring}}

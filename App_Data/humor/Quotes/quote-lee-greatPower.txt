@@ -1,0 +1,4 @@
+With great power, comes great responsibility.
+
+^{{picture StanLee.jpg}}
+{{i:-- Stan Lee}}

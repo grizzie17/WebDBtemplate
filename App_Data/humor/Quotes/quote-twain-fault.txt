@@ -1,0 +1,4 @@
+Always acknowledge a fault. This will throw those in authority off their guard and give you an opportunity to commit more.
+
+^{{picture MarkTwain.gif}}
+{{i:-- Mark Twain}}

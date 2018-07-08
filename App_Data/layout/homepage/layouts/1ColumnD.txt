@@ -1,0 +1,25 @@
+﻿<%
+''<head>
+''<title>1-Column (D)</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="dynamic">
+''</head>
+
+%>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="tableoutercolset">
+<tr>
+<td id="coldynamic">
+<%
+'========================
+' ColDynamic
+'========================
+
+
+%%dynamic%%
+
+
+
+%>
+</td>
+</tr>
+</table>

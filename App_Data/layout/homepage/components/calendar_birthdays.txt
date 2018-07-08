@@ -1,0 +1,45 @@
+﻿''<head>
+''<title>Calendar Birthdays</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Monthly birthday and anniversary announcements">
+''</head>
+
+'loadcalendar.asp?f=cachefile.htm&i=h&v=6&r=d&b=begindate&e=enddate&c=categories&h=holidaycats&t=showtoday&x=xsltfile
+
+SUB makeCalendarBirthdays()
+
+	DIM	nYear, nYearEnd
+	DIM	nMon, nMonEnd
+	DIM	nDateBegin, nDateEnd
+
+	nYear = YEAR(NOW)
+	nMon = MONTH(NOW)
+	nMonEnd = nMon + 1
+	IF 12 < nMonEnd THEN
+		nYearEnd = nYear + FIX(nMonEnd/12)
+		nMonEnd = nMonEnd MOD 12
+	ELSE
+		nYearEnd = nYear
+	END IF
+
+	nDateBegin = jdateFromGregorian( 1, nMon, nYear )
+	nDateEnd = jdateFromGregorian( 1, nMonEnd, nYearEnd ) - 1
+
+
+	DIM	sRmdCat
+	sRmdCat = "birthday,anniversary"
+
+
+Response.Write "<div class=""calendarcontent"">" & vbCRLF
+Response.Write "<div class=""BlockHead""><a href=""calendar.asp?cat=" & sRmdCat & """>Birthdays / Anniversaries</a></div>" & vbCRLF
+Response.Write "<div class=""BlockBody"">"
+
+outputDynamic "calendarbirthday", _
+"loadcalendar.asp?f=homebday.htm&i=d&v=7&r=m&b=" & nDateBegin & "&e=" & nDateEnd & "&c=" & sRmdCat & "&h=ignore&t=false&x=scripts/remind.xslt", _
+		"homebday.htm", "0.5", "d", 7, "m"
+
+Response.Write "</div>" & vbCRLF
+Response.Write "</div>" & vbCRLF
+
+END SUB
+makeCalendarBirthdays

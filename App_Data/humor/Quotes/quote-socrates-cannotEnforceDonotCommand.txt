@@ -1,0 +1,4 @@
+What you cannot enforce, do not command.
+
+^{{picture Socrates.jpg}}
+{{i:-- Socrates}}

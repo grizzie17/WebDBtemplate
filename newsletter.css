@@ -1,0 +1,178 @@
+﻿/* Newsletter CSS */
+
+
+.HeadName
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: x-large;
+	color: #930035;
+	text-align: center;
+}
+
+.HeadChapter
+{
+	font-size: medium;
+	text-align: center;
+	color: #996600;
+}
+
+.HeadMotto
+{
+	font-size: x-small;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: #996600;
+}
+
+.HeadDate
+{
+	font-size: large;
+	color: #996600;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.htmlformatcaption
+{
+	color: #996633;
+	font-size: medium;
+	/*font-family: Arial,Helvetica,Verdana,sans-serif;*/
+}
+
+
+td.newsletter table.htmlformattable, 
+td.newsletter table.htmlformattable td
+{
+	border: 1px solid #EEEEEE;
+}
+
+
+
+table.htmlformattable, 
+table.htmlformattable td
+{
+	border: 1px solid #EEEEEE;
+}
+
+
+
+
+.newsletter h3.htmlformat
+{
+	color: #990000;
+	background-color: #EEEEEE;
+}
+
+
+h3.htmlformat
+{
+	color: #990000;
+	background-color: #EEEEEE;
+	padding: 5px;
+	border-bottom: 3px solid #990000;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+td.newsletter h4.htmlformat
+{
+	color: #990000;
+	background-color: #EEEEEE;
+	padding: 5px;
+	/*border-top: 2px solid #990000;*/
+	border-bottom: 1px solid #990000;
+}
+
+
+h4.htmlformat
+{
+	color: #990000;
+	background-color: #EEEEEE;
+	padding: 5px;
+	border-bottom: 1px solid #990000;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+h5.htmlformat
+{
+	color: #CC9966;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+
+
+
+.newsletter img
+{
+	position: relative;
+	/*display: block;*/
+	z-index: 10;
+}
+
+
+table.htmlformatpullquote
+{
+	position: relative;
+	border-top: 4px solid #FFCC00;
+	border-bottom: 4px solid #FFCC00;
+	border-left: 4px solid #FFEECC;
+	border-right: 4px solid #FFEECC;
+	margin: 2px;
+	page-break-inside: avoid;
+	z-index: 110;
+}
+
+th.htmlformatpullquote
+{
+	background: #FFEECC url(images/bkg_pullquote.gif) left top no-repeat; 
+	/*background-color: #FFEECC;	#FFDD99;*/
+	font-style: italic;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	border: none;
+	page-break-inside: avoid;
+	text-align: center;
+}
+
+td.htmlformatsidebar
+{
+	background-color: #EEEEEE;
+	font-size: small;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	padding: 4px;
+	border: none;
+}
+
+table.htmlformatsidebar
+{
+	border: 1px solid #CC9966;
+	background-color: #EEEEEE;
+	position: relative;
+	font-size: small;
+	clear: both;
+	z-index: 100;
+}
+
+table.htmlformatsidebar p
+{
+	page-break-inside: avoid;
+}
+
+td.htmlformatsidebar h4.htmlformat
+{
+	color: #CC9966;
+	background-color: #DDDDDD;
+	padding: 2px;
+	border-top: 0;
+	border-bottom: 1px solid #CC9966;
+}
+
+td.htmlformatsidebar *:first-child
+{
+	margin-top: 0;
+}
+
+
+
+

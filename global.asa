@@ -1,0 +1,55 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+'Sub Application_OnStart
+	' Set our user count to 0 when we start the server
+	'Application("ActiveUsers") = 0
+	'Application("UserAddresses") = " "
+'End Sub
+
+Sub Session_OnStart
+
+	'DIM	sIP
+	'DIM	nUsers
+
+	' Change Session Timeout to 20 minutes (if you need to)
+	Session.Timeout = 20
+	' Set a Session Start Time
+	' This is only important to assure we start a session
+	'Session("Start") = Now
+	'sIP = Request.ServerVariables("REMOTE_ADDR")
+	'' Increase the active visitors count when we start the session
+	'Application.Lock
+	'	nUsers = Application("ActiveUsers")
+	'	IF ISNUMERIC(nUsers) THEN
+	'		nUsers = CINT(nUsers) + 1
+	'	ELSE
+	'		nUsers = 1
+	'	END IF
+	'	Application("ActiveUsers") = nUsers
+	'	sIP = sIP & "-" & nUsers
+	'	Application("UserAddresses") = Application("UserAddresses") & " " & sIP & " "
+	'Application.UnLock
+	'Session("UserIP") = sIP
+End Sub
+
+'Sub Session_OnEnd
+'	DIM	nUsers
+'	DIM	sIPs
+'	' Decrease the active visitors count when the session ends.
+'	Application.Lock
+'		nUsers = Application("ActiveUsers")
+'		IF ISNUMERIC(nUsers) THEN
+'			nUsers = CINT(nUsers) - 1
+'		ELSE
+'			nUsers = 0
+'		END IF
+'		IF nUsers < 0 THEN nUsers = 0
+'		Application("ActiveUsers") = nUsers
+'		sIPs = Application("UserAddresses")
+'		sIPs = REPLACE( sIPS, " " & Session("UserIP") & " ", "", 1, -1, vbTextCompare )
+'		IF LEN(sIPs) < 1 THEN sIPs = " "
+'		Application("UserAddresses") = sIPs
+'	Application.UnLock
+'End Sub
+
+</SCRIPT>

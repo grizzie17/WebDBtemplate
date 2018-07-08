@@ -1,0 +1,5 @@
+It's not easy being green.
+
+^{{picture kermit.gif}}
+{{i:-- Kermit the Frog}}
+{{small:Jim Henson}}

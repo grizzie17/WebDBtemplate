@@ -1,0 +1,5 @@
+Always end the name of your child with a vowel, so that when you yell the name will carry.
+
+^{{picture BillCosby.jpg}}
+{{i:-- Bill Cosby}}
+{{small:(Fatherhood)}}

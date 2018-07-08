@@ -1,0 +1,28 @@
+﻿''<head>
+''<title>Calendar Pending Events</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Upcoming events for your group, but organized differently (180 Days)">
+''</head>
+
+SUB makeCalendarPendingEvents()
+
+	DIM	nDateBegin, nDateEnd
+
+	nDateBegin = jdateFromVBDate( NOW )
+	nDateEnd = -180
+
+
+Response.Write "<div class=""calendarcontent"">" & vbCRLF
+Response.Write "<div class=""BlockHead""><a href=""calendar.asp""> Events</a></div>" & vbCRLF
+Response.Write "<div class=""BlockBody"">"
+
+outputDynamic "calendarpending180", _
+"loadcalendar.asp?f=calendarpending.htm&i=h&v=24&r=d&b=" & nDateBegin & "&e=" & nDateEnd & "&c=~c-meeting&h=holiday,usa,none&t=true&x=scripts/remind.xslt", _
+		"calendarpending.htm", "0.5", "h", 24, "d"
+
+Response.Write "</div>" & vbCRLF
+Response.Write "</div>" & vbCRLF
+
+
+END SUB
+makeCalendarPendingEvents

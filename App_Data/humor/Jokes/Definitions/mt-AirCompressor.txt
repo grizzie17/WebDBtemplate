@@ -1,0 +1,3 @@
+{{b:Air Compressor:}}
+
+A machine that takes energy produced in a coal-burning power plant 200 miles away and transforms it into compressed air that travels by hose to an impact wrench that grips rusty bolts last tightened 60 years ago, by an apprentice in Milwaukee, and either rounds them off or removes the bolt head entirely depending on your perseverance.

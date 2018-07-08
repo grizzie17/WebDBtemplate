@@ -1,0 +1,18 @@
+﻿''<head>
+''<title>Weather Forecast</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Weather forecast for the zipcode provided in the site configuration">
+''</head>
+
+IF "" <> g_sSiteZip THEN
+%>
+<div id="weather" class="dynamic">
+	<div class="BlockHead">Weather</div>
+	<div class="BlockBody">
+<%
+outputDynamic "weather", "loadrssweather.asp?z=" & g_sSiteZip, "weather" & g_sSiteZip & ".htm", "1", "h", 2, "d"
+%>
+	</div>
+</div>
+<%
+END IF

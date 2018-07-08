@@ -1,0 +1,7 @@
+{{i:Charlie Brown:}} Well Snoopy, what are your plans for today? 
+
+{{i:Snoopy:}} Plans? I hadn't even thought about it. But I suppose I'll sleep a little this morning. Then this afternoon I'll take a short nap and later on I'll try to get some more sleep. Those are good plans!
+
+^{{picture Snoopy-sleep.jpg}}
+{{i:-- Snoopy}}
+{{small:Charles M. Schulz}}

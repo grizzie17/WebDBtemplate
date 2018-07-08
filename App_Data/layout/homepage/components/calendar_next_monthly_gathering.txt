@@ -1,0 +1,29 @@
+﻿''<head>
+''<title>Calendar Next Monthly Gathering</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Notice our your next monthly group meeting">
+''</head>
+
+
+SUB makeCalendarNextMonthlyMeeting()
+
+	DIM	nDateBegin
+	DIM	nDateEnd
+
+	nDateBegin = jdateFromVBDate( NOW )
+	nDateEnd = nDateBegin + 7 * 12
+
+Response.Write "<div class=""calendarcontent"">" & vbCRLF
+Response.Write "<div class=""BlockHead"">Next Monthly Gathering</div>" & vbCRLF
+Response.Write "<div class=""BlockBody"">"
+
+outputDynamic "calendarnextmonthlymeeting", _
+"loadcalendar.asp?f=calendarnextmonthlymeeting.htm&i=h&v=24&r=d&b=" & nDateBegin & "&e=" & nDateEnd & "&c=" & LCASE(g_sSiteChapterID) & "-gathering" & "&h=ignore&t=false&x=scripts/remind_gathering.xslt", _
+		"calendarnextmonthlymeeting.htm", "0.5", "h", 24, "d"
+
+Response.Write "</div>" & vbCRLF
+Response.Write "</div>" & vbCRLF
+
+
+END SUB
+makeCalendarNextMonthlyMeeting

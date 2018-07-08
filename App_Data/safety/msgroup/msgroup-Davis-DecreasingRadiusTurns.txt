@@ -1,0 +1,21 @@
+!!Decreasing Radius Turns May Not Have A Decreasing Radius
+
+A decreasing radius turn is dangerous. Such a turn that does not have a decreasing radius is even more dangerous because it is not obvious.
+
+(Only a 'literalist' should think that a 'decreasing radius curve' necessarily involves a decreasing radius.)
+
+The problem with a decreasing radius turn is that you can find yourself going too fast to exit it safely even though you were not going too fast for the first part of the curve. That is, unlike a constant radius turn, there is not one smooth line through this kind of curve which has a single apex to it that allows you to pick a single stable lean/speed through it.
+
+How can a decreasing radius turn not have a decreasing radius? Simple. There are three scenarios that individually or combined result in a curve that must be treated as if it is decreasing radius:
+
+* The early part of the curve provides a more positive camber (leans inward) than does the latter part of the curve.
+
+* There is a rising elevation in the early part of the curve and a falling elevation towards its end.
+
+* The traction in the early part of the curve is better than towards the end.  
+
+{{small:Though each of the curves described above has a constant radius, they must be treated in the same way as a decreasing radius curve in order to negotiate them safely.
+
+So, what this should tell you is that on any unfamiliar road you should avoid trying to take the curves as fast as they look to be. Further, you are well advised to always plan to exit a curve some distance away from its outside edge - this, so that you have some ability to 'overshoot' your line WHEN the unexpected happens.}}
+ 
+http://www.msgroup.org/DISCUSS.asp [{{i:By James R. Davis}}]

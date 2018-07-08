@@ -1,0 +1,37 @@
+﻿<%
+''<head>
+''<title>2-Column (FD)</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="fixed1,dynamic">
+''</head>
+
+%>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="tableoutercolset">
+<tr>
+<td id="colfixed1">
+<%
+'========================
+' ColFixed1
+'========================
+
+
+%%fixed1%%
+
+
+%>
+</td>
+<td id="coldynamic">
+<%
+'========================
+' ColDynamic
+'========================
+
+
+%%dynamic%%
+
+
+
+%>
+</td>
+</tr>
+</table>

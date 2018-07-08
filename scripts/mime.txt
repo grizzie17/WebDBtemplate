@@ -1,0 +1,26 @@
+﻿
+jpg	image/jpeg	JPEG Graphic Image
+gif	image/gif	Graphic Image Format
+png	image/png	Portable Network Graphics
+jpe	image/jpeg	JPEG Graphic Image
+jpeg	image/jpeg	JPEG Graphic Image
+ico	image/x-icon	ICON Graphic Image
+bmp	image/bmp	Bitmap Graphic Image
+
+-
+
+pdf	application/pdf	Portable Document Format
+zip	application/zip	ZIP Compressed File
+avi	video/avi	Audio/Visual Information
+wmv	video/x-ms-wmv	Windows Media Video File
+mpg	video/mpeg	Movie File
+mov	video/quicktime	Quicktime Movie File
+doc	application/msword	Microsoft Word Document
+docx	application/msword	Microsoft Word Document X
+xls	application/vnd.ms-excel	Microsoft Excel Spreadsheet
+xlsx	application/vnd.ms-excel	Microsoft Excel Spreadsheet X
+ppt	application/vnd.ms-powerpoint	Microsoft Powerpoint Presentation
+pps	application/vnd.ms-pps	Microsoft Powerpoint Slideshow
+pptx	application/vnd.ms-powerpoint	Microsoft Powerpoint Presentation X
+gdb	application/octet-stream	Garmin Mapsource Files
+est	application/octet-stream	Microsoft Streets and Trips Files

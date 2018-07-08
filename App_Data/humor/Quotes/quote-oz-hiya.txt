@@ -1,0 +1,5 @@
+Hiya! Hiya! Hiya! Hiya!
+
+^{{picture fozzie.jpg}}
+{{i:-- Fozzie Bear}}
+{{small:Frank Oz}}

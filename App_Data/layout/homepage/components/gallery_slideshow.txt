@@ -1,0 +1,5 @@
+﻿''<head>
+''<title>Gallery Slideshow</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Slideshow of pictures from the gallery">
+''</head>

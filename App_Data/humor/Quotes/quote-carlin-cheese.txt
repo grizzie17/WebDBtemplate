@@ -1,0 +1,4 @@
+When cheese gets it's picture taken, what does it say?
+
+^{{picture GeorgeCarlin.jpg}}
+{{i:-- George Carlin}}

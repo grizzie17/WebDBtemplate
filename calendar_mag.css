@@ -1,0 +1,239 @@
+﻿
+
+@import url(scripts/user/calendar_mag.css);
+
+
+
+.yearpage
+{
+	text-align: center;
+}
+
+
+.yearblock
+{
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.yearblock td, .yearblock th
+{
+	padding-left: 0.33in;
+	padding-right: 0.33in;
+}
+
+.yeartitle
+{
+	font-size: 90pt;
+	letter-spacing: 0.5em;
+	text-align: center;
+	background-color: #000066;
+	color: white;
+	font-family: Arial Black, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.monthblock
+{
+	border-collapse: collapse;
+	padding: 0;
+	table-layout: auto;
+	position: relative;
+}
+
+.monthblock td
+{
+	padding: 0;
+}
+
+.monthtitle
+{
+	color: #003399;
+	font-size: x-large;
+	font-family: Arial Black, Arial, sans-serif;
+}
+
+.daytitle
+{
+	position: relative;
+	font-size: small;
+	font-family: Arial, Arial, sans-serif;
+	text-align: center;
+	width: 14.28%;
+	padding: 0;
+}
+
+.emptyday
+{
+	position: relative;
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	border-left: 1px solid #000066;
+	border-right: 1px solid #000066;
+	/*width: 14.28%;*/
+}
+
+td.dayblock
+{
+	position: relative;
+	width: 14.28%;
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid #CCCCCC;
+	/*border-left: 1px solid #000066;
+	border-right: 1px solid #000066;*/
+	padding-left: 0.04in;
+	padding-right: 0.04in;
+}
+
+.daynumber
+{
+	position: relative;
+	/*top: 0;
+	left: 0;
+	padding-left: 4px;*/
+	font-size: large;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	color: #CCCCCC;
+	z-index: 1;
+}
+
+
+
+
+
+
+.reminders
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: medium;
+	font-weight: normal;
+	text-align: left;
+	position: relative;
+	z-index: 100;
+}
+
+.reminders td
+{
+	text-align: left;
+	vertical-align: top;
+	padding: 0px;
+}
+
+
+.RmdMeal2
+{
+	font-size: x-small !important;
+}
+
+
+
+
+
+
+
+
+
+
+.weekend .daynumber
+{
+	color: #003399;
+	background-color: #CEE7FF;
+}
+
+
+.event
+{
+	/*color: #0033CC;*/
+	/*text-decoration: underline;*/
+}
+
+.calendar_privatedef
+{
+	background-color: #CCEEFF;
+}
+
+.calendar_conference
+{
+	background-color: #FFCC99;
+}
+
+.calendar_holiday2 .daynumber
+{
+	background-color: #DDE9FF;
+}
+
+.calendar_holiday .daynumber
+{
+	font-style: italic;
+	background-color: #BCD3FE;
+}
+
+.calendar_usa .daynumber
+{
+	color: #000099;
+}
+
+.calendar_season .daynumber
+{
+	color: maroon;
+}
+
+.calendar_time .daynumber
+{
+	color: purple;
+}
+
+.calendar_taxes .daynuymber
+{
+	color: green;
+	font-style: italic;
+}
+
+.calendar_family
+{
+}
+
+.calendar_funday
+{
+}
+
+.calendar_district
+{
+}
+
+
+
+.calendar_safety
+{
+}
+
+
+
+
+
+
+
+
+/* handle printing issues */
+
+.monthtitle
+{
+	page-break-before: always;
+}
+
+
+
+div.yearpage .monthtitle:first-child
+{
+	page-break-before: auto !important;
+}
+
+
+
+
+
+

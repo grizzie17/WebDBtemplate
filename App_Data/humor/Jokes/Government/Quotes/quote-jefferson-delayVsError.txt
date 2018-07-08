@@ -1,0 +1,5 @@
+Delay is preferable to error.
+
+^{{picture ThomasJefferson.jpg}}
+{{i:-- Thomas Jefferson}}
+{{small:(1743 - 1826)}}

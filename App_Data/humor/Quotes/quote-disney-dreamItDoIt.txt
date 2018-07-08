@@ -1,0 +1,5 @@
+If you can dream it, 
+you can do it.
+
+^{{picture WaltDisney.jpg}}
+{{i:-- Walt Disney}}

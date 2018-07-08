@@ -1,0 +1,4 @@
+﻿You cannot shake hands with a clenched fist.
+
+^{{picture IndiraGandhi.jpg}}
+{{i:Indira Gandhi}}

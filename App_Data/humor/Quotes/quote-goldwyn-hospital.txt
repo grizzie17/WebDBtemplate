@@ -1,0 +1,5 @@
+A Hospital is no place to be sick.
+
+^{{picture SamuelGoldwyn.jpg}}
+{{i:-- Samuel Goldwyn}}
+{{small:Movie Director}}

@@ -1,0 +1,7 @@
+{{b:Brain Cramps}}
+
+{{picture BillClinton.jpg}}
+If we don't succeed, we run the risk of failure.
+
+{{i:-- Bill Clinton}}
+{{small:President}}

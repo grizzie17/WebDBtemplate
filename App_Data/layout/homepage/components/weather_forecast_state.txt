@@ -1,0 +1,60 @@
+﻿''<head>
+''<title>Weather Forecast State</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Weather forecast for the state">
+''</head>
+
+%>
+<table width="100%" cellspacing="0" cellpadding="4" id="weather">
+	<tr>
+		<th class="BlockHead" align="left" colspan="2">	Weather</th>
+	</tr>
+	<tr>
+	<td bgcolor="#99CCFF" align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: xx-small">
+U<br>
+p<br>
+p<br>
+e<br>
+r</td>
+	<td style="border-bottom-style: solid; border-bottom-width: medium; border-bottom-color: #99CCFF;">
+<%
+
+outputDynamic "weather35801", "loadrssweather.asp?z=35801", "weather35801.htm", "0.75", "h", 2, "d"
+
+%>
+	</td>
+	</tr>
+	<tr>
+	<td bgcolor="#99CCFF" align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: xx-small">
+M<br>
+i<br>
+d<br>
+d<br>
+l<br>
+e</td>
+	<td style="border-bottom-style: solid; border-bottom-width: medium; border-bottom-color: #99CCFF;">
+<%
+
+outputDynamic "weather35045", "loadrssweather.asp?z=35045", "weather35045.htm", "1", "h", 2, "d"
+
+%>
+	</td>
+	</tr>
+	<tr>
+	<td bgcolor="#99CCFF" align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: xx-small">
+L<br>
+o<br>
+w<br>
+e<br>
+r</td>
+	<td>
+<%
+
+outputDynamic "weather36601", "loadrssweather.asp?z=36601", "weather36601.htm", "1.25", "h", 2, "d"
+
+%>
+	</td>
+	</tr>
+</table>
+
+<%

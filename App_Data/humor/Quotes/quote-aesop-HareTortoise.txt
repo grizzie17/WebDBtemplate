@@ -1,0 +1,5 @@
+Slow and steady wins the race.
+
+^{{picture aesop.jpg}}
+{{i:-- Aesop}}
+{{small:The Hare and the Tortoise}}

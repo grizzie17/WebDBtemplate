@@ -1,0 +1,631 @@
+﻿
+
+
+.remind_table a:link
+{
+	color: #000066;
+}
+
+.remind_table a:visited
+{
+	color: #660066;
+}
+
+
+
+
+.RmdRide
+{
+/* :: Chapter Rides :: */
+	color: black;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.RmdRide a:link, .RmdRide a:visited
+{
+	color: black;
+}
+
+
+.RmdSecondary
+{
+/* :: Alternate Chapter Ride :: */
+	color: #696969; /* dimgray */
+	font-size: medium;
+}
+.RmdSecondary a:link, .RmdSecondary a:visited
+{
+	color: #696969; /* dimgray */
+}
+
+
+.RmdEvent
+{
+/* :: Chapter Activities :: */
+	color: #800000;
+	font-size: medium;
+}
+
+.RmdEvent a:link, .RmdEvent a:visited
+{
+	color: #800000;
+}
+
+
+
+.RmdGathering
+{
+/* :: Chapter Gathering :: */
+	color: #FF0000; /* red */
+	font-weight: bold;
+	font-size: medium;
+}
+.RmdGathering a:link, .RmdGathering a:visited
+{ color: #FF0000; /* red */ }
+.RmdGathering a:hover
+{ color: #ffa500; /* orange */ }
+
+
+
+.RmdGatheringAlternate
+{
+/* :: Chapter Gathering (Alternate) :: */
+	color: #8b0000; /* darkred */
+	font-weight: bold;
+	font-size: medium;
+}
+.RmdGatheringAlternate a:link, .RmdGatheringAlternate a:visited
+{ color: #8b0000; /* darkred */ }
+
+
+.RmdBusinessMeeting
+{
+/* :: Chapter Business Meetings :: */
+	color: #996600; /* darkred */
+	font-size: medium;
+}
+.RmdBusinessMeeting a:link, .RmdBusinessMeeting a:visited
+{ color: #996600; /* darkred */ }
+
+.RmdBusinessMeeting2
+{
+/* :: Chapter Business Meetings 2 :: */
+	color: #996600; /* darkred */
+	font-size: small;
+}
+.RmdBusinessMeeting2 a:link, .RmdBusinessMeeting2 a:visited
+{ color: #996600; /* darkred */ }
+
+
+
+
+
+.RmdMeal
+{
+/* :: Chapter Meals :: */
+	color: #CC6600;
+	font-size: medium;
+}
+
+.RmdMeal a:link, .RmdMeal a:visited
+{
+	color: #CC6600;
+}
+
+
+.RmdMeal2
+{
+	/* :: Chapter Meals 2 :: */
+	color: #FF9900;
+	font-size: small;
+}
+
+.RmdMeal2 a:link, .RmdMeal2 a:visited
+{
+	color: #FF9900;
+}
+
+
+
+
+.RmdBirthdayDinner
+{
+/* :: Chapter Birthday dinner :: */
+	color: #00008b; /* darkblue */
+	font-size: medium;
+}
+
+.RmdBirthdayDinner a:link, .RmdBirthdayDinner a:visited
+{
+	color: #00008b; /* darkblue */
+}
+
+
+
+.birthday
+{
+	/* :: Member Birthdays and Anniversaries :: */
+	color: #6495ed; /* cornflowerblue */
+	font-size: small;
+	font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.RmdSafety
+{
+/* :: Chapter Education / Safety Events :: */
+	color: green;
+	font-size: medium;
+	font-weight: bold;
+}
+.RmdSafety a:link, .RmdSafety a:visited
+{ color: green; }
+
+
+.RmdSafetySup
+{
+	/* :: Chapter Supported Education / Safety Events :: */
+	color: green;
+	font-size: medium;
+}
+.RmdSafetySup a:link, .RmdSafetySup a:visited
+{
+	color: green;
+}
+
+
+.RmdSafetyEnc
+{
+	/* :: Chapter Encouraged Education/Safety Events :: */
+	color: #32cd32; /* limegreen */
+	font-family: sans-serif;
+	font-size: small;
+}
+.RmdSafetyEnc a:link, .RmdSafetyEnc a:visited
+{
+	color: #32cd32;
+	text-decoration: none;
+}
+
+
+.RmdSafetyInfo
+{
+	/* :: Education/Safety Event :: */
+	color: #32cd32; /* limegreen */
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdSafetyInfo a:link, .RmdSafetyInfo a:visited
+{
+	color: #32cd32;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.RmdCharity
+{
+/* :: Chapter Sponsored charity event :: */
+	color: purple;
+	font-size: medium;
+	font-weight: bold;
+}
+.RmdCharity a:link, .RmdCharity a:visited
+{ color: purple; }
+
+
+.RmdCharitySup
+{
+/* :: Chapter supported charity event :: */
+	color: purple;
+	font-size: medium;
+}
+.RmdCharitySup a:link, .RmdCharitySup a:visited
+{ color: purple; }
+
+
+.RmdCharityEnc
+{
+/* :: Chapter encouraged charity event :: */
+	color: #FF99FF;
+	font-size: small;
+	font-family: sans-serif;
+}
+.RmdCharityEnc a:link, .RmdCharityEnc a:visited
+{
+	color: #FF99FF;
+	text-decoration: none;
+}
+
+
+.RmdCharityInfo
+{
+	/* :: Charity Event :: */
+	color: #da70d6; /* orchid */ 
+	font-size: x-small; 
+	font-family: sans-serif;
+}
+.RmdCharityInfo a:link, .RmdCharityInfo a:visited
+{
+	color: #da70d6; /* orchid */
+	text-decoration: none;
+}
+
+
+
+
+
+.RmdDistrictRally
+{
+	/* :: District Rally :: */
+	color: goldenrod;
+	font-family: sans-serif;
+	font-size: medium;
+}
+.RmdDistrictRally a:link, .RmdDistrictRally a:visited
+{
+	color: goldenrod;
+}
+
+
+
+
+.RmdDistrictEvent
+{
+	/* :: District Activity / Event :: */
+	color: goldenrod;
+	font-size: small;
+	font-family: sans-serif;
+}
+.RmdDistrictEvent a:link, .RmdDistrictEvent a:visited
+{
+	color: goldenrod;
+}
+
+.RmdDistrictEventSecondary
+{
+	/* :: District Activity / Event (Secondary) :: */
+	color: gold;
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdDistrictEventSecondary a:link, .RmdDistrictEventSecondary a:visited
+{
+	color: gold;
+}
+
+
+
+.RmdDistrictBusinessMeeting
+{
+	/* :: District Business Meeting :: */
+	color: goldenrod;
+	font-family: sans-serif;
+	font-size: x-small;
+}
+.RmdDistrictBusinessMeeting a:link, .RmdDistrictBusinessMeeting a:visited
+{ color: goldenrod; }
+
+
+
+
+
+
+
+
+
+
+
+.RmdGWRRA_National
+{
+	/* :: GWRRA National Rallies/Events :: */
+	color: darkorange;
+	font-size: medium;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.RmdGWRRA_National a:link, .RmdGWRRA_National a:visited
+{
+	color: darkorange;
+}
+
+
+.RmdGWRRA_RegionA
+{
+	/* :: GWRRA Region-A Local Rallies/Events :: */
+	color: #808000;
+	font-size: medium;
+	font-family: sans-serif;
+}
+.RmdGWRRA_RegionA a:link, .RmdGWRRA_RegionA a:visited
+{
+	color: #808000;
+}
+
+
+.RmdGWRRA_Region_Neighbor
+{
+	/* :: GWRRA Region Neighbor Rallies/Events :: */
+	color: #808000;
+	font-size: small;
+	font-family: sans-serif;
+}
+.RmdGWRRA_Region_Neighbor a:link, .RmdGWRRA_Region_Neighbor a:visited
+{
+	color: #808000;
+}
+
+
+.RmdGWRRA_Region_Remote
+{
+	/* :: GWRRA Remote Rallies/Events :: */
+	color: #CCCC00;
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdGWRRA_Region_Remote a:link, .RmdGWRRA_Region_Remote a:visited
+{
+	color: #CCCC00;
+}
+
+
+
+
+
+
+
+
+
+.RmdChapterMeeting
+{
+	/* :: Neighboring Chapter Gatherings :: */
+	color: #8fbc8f;
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdChapterMeeting a:link, .RmdChapterMeeting a:visited
+{
+	color: #8fbc8f;
+}
+
+.RmdChapterActivity
+{
+	/* :: Neighboring Chapter Activities :: */
+	color: #bdb76b; 
+	font-size: small;
+	font-family: sans-serif;
+}
+.RmdChapterActivity a:link, .RmdChapterActivity a:visited
+{
+	color: #bdb76b;
+}
+
+
+
+
+
+.RmdChapterNeighbor
+{
+	color: #bdb76b; /* darkkhaki */
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdChapterNeighbor a:link, .RmdChapterNeighbor a:visited
+{
+	color: #bdb76b; /* darkkhaki */
+}
+
+.RmdChapterNeighborSpecial
+{
+	color: #bdb76b; /* darkkhaki */
+	font-size: small;
+	font-family: sans-serif;
+}
+.RmdChapterNeighborSpecial a:link, .RmdChapterNeighborSpecial a:visited
+{
+	color: #bdb76b; /* darkkhaki */
+}
+
+.RmdChapterNeighborEx
+{
+	color: #8fbc8f; /* darkseagreen */
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdChapterNeighborEx a:link, .RmdChapterNeighborEx a:visited
+{
+	color: #8fbc8f; /* darkseagreen */
+}
+
+
+
+
+
+
+.RmdNormal
+{
+	color: #000000; /* black */
+	font-size: medium;
+}
+
+.RmdNormal a:link, .RmdNormal a:visited
+{
+	color: #000000; /* black */
+}
+
+
+
+
+
+.RmdMotorcycleCMA
+{
+	/* :: CMA Event :: */
+	color: gray;
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdMotorcycleCMA a:link, .RmdMotorcycleCMA a:visited
+{ color: gray; }
+
+
+
+
+.RmdMotorcycle
+{
+	/* :: National Motorcycle Rallies, etc :: */
+	color: #a9a9a9; /* darkgray */
+	font-size: x-small;
+	font-family: sans-serif;
+}
+.RmdMotorcycle a:link, .RmdMotorcycle a:visited
+{ color: #a9a9a9; /* darkgray */ }
+
+
+.RmdMotorcycleLocal
+{
+	color: #a9a9a9; /* darkgray */
+	font-size: xx-small;
+	font-family: sans-serif;
+}
+.RmdMotorcycleLocal a:link, .RmdMotorcycleLocal a:visited
+{ color: #a9a9a9; /* darkgray */ }
+
+
+
+
+.RmdMotorcycleRef
+{
+	/* :: Local event interesting to Motorcyclists :: */
+	color: #996633;
+	font-family: sans-serif;
+	font-size: small;
+}
+.RmdMotorcycleRef a:link, .RmdMotorcycleRef a:visited
+{ color: #996633; }
+
+
+
+
+
+
+.holiday
+{
+	/* :: Holidays :: */
+	color: #99CCCC; 
+	font-weight: bold; 
+	font-family: sans-serif;
+}
+.holiday2
+{ color: #99CCCC; font-family: sans-serif; }
+
+
+
+.RmdTaxDay    { color: #99CCCC; font-weight: bold; font-size: small; font-family: sans-serif; }
+.RmdReligious { color: #99CCCC; font-size: x-small; font-family: sans-serif; }
+.RmdReligious a:link, .RmdReligious a:visited
+{
+	color: #99CCCC;
+	text-decoration: none;
+}
+
+.RmdReligiousBig { color: #99CCCC; font-family: sans-serif; }
+.RmdReligiousBig a:link, .RmdReligiousBig a:visited
+{
+	color: #99CCCC;
+	text-decoration: none;
+}
+.RmdInfo
+{
+	/* :: Calendar/Date trivia :: */
+	color: #99CCCC; font-size: x-small; font-family: sans-serif;	
+}
+.RmdInfo a:link, .RmdInfo a:visited { color: #99CCCC; }
+.RmdMilitary  { color: #99CCCC; font-size: x-small; font-family: sans-serif; }
+.RmdStPatrick { color: #99CCCC; }
+.RmdStPatrick a:link, .RmdStPatrick a:visited { color: #99CCCC; }
+.RmdHalloween { color: #99CCCC; font-size: small; }
+.RmdChristmas { color: #99CCCC; font-weight: bold; font-family: sans-serif; }
+.entertainment{ color: #99CCCC; font-size: x-small; font-family: sans-serif;  }
+.entertainmentBig{ color: #99CCCC; font-size: small; font-weight: bold; font-family: sans-serif; }
+.entertainment a:link, .entertainment a:visited,
+.entertainmentBig a:link, .entertainmentBig a:visited
+{
+	color: #99CCCC;
+}
+
+
+
+.adhoc        { color: #CC0000; font-weight: bold; }
+.adhoc a:link, .adhoc a:visited
+{
+	color: #CC0000;
+}
+
+
+
+
+.outerspace   { color: #99CCCC; font-size: x-small; font-family: sans-serif; }
+.place_marker { color: #FF9900; font-weight: bold; font-family: sans-serif; }
+.purple		  { color: purple; font-size: small; font-weight: bold; font-family: sans-serif; }
+.RmdWork      { color: #99CCCC; font-size: x-small; }
+.RmdWork a:link, .RmdWork a:visited { color: #99CCCC; }
+.myanniv
+{
+	color: #99CCCC;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.RmdToday
+{
+	background-color: #FFDD99;
+	color: #FF0000;
+	font-size: large;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+
+
+th.RemindMonthHeader
+{
+	font-family: sans-serif;
+}
+
+
+.remind_table * a:hover
+{
+	color: #FF0000;
+	text-decoration: underline
+}
+
+
+.RmdPast, .RmdPast a:link, .RmdPast a:visited
+{
+	color: #99CCCC;
+	font-size: xx-small;
+	text-decoration: none;
+
+}
+
+.RmdAnnouncement_Calendar
+{
+	color: teal;
+	font-size: x-small;
+	font-family: sans-serif;
+}
+

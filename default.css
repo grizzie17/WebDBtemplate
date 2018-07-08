@@ -1,0 +1,207 @@
+﻿
+div p:first-child, div h2:first-child, h3:first-child, h4:first-child
+{
+	margin-top: 0;
+}
+
+.rssweather
+{
+	text-align: left;
+	font-size: small;
+	font-family: sans-serif;
+}
+
+.meetcalendar
+{
+	display: none;
+}
+
+
+.neighbormeeting
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+
+#emailnoticecontent
+{
+	font-family: sans-serif;
+	font-size: x-small;
+	color: silver;
+}
+
+
+.BlockHead
+{
+	position: relative;
+	background-image: url('images/header_bkg.gif');
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 4px 4px 4px 4px;
+	margin: 0;
+	background-color: #DDCCAA;
+}
+
+.BlockBody
+{
+	position: relative;
+	padding: 4px 4px 4px 4px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.dynamic
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#localforumcontent .BlockHead:before
+{
+	content: url('images/icon_forum.gif');
+}
+
+#districtforumcontent .BlockHead:before
+{
+	content: url('images/icon_alforum.gif');
+}
+
+
+#announcecontent .old:before
+{
+	content: url('images/icon_announcement.gif');
+}
+
+#announcecontent .update:before
+{
+	content: url('images/icon_announcementupdate.gif');
+}
+
+#announcecontent .BlockBody
+{
+	text-align: center;
+}
+
+#districtannouncecontent .BlockHead:before
+{
+	content: url('images/hdr_rssannounce.gif');
+}
+
+#districtannouncecontent .BlockBody
+{
+	text-align: center;
+}
+
+
+#homebodycontent .BlockHead
+{
+	text-align: left !important;
+}
+
+
+#homebodycontent .BlockHead:before
+{
+	content: url('favicon32.gif');
+}
+
+#homebodycontent table,
+#homebodycontent table tr,
+#homebodycontent table td
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#xxxcalendarcontent .xxxBlockHead
+{
+	background-color: #fcaf9b;	/* for non-css3 browsers */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFAA66', endColorstr='#DD6600'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+}
+
+.calendarcontent .BlockHead:before
+{
+	content: url('images/icon_standardevents.gif');
+}
+
+#xxxemailevents .xxxBlockHead
+{
+	background-color: #fcaf9b;	/* for non-css3 browsers */
+}
+
+#emailevents .BlockHead:before
+{
+	content: url('images/icon_email.gif');
+}
+
+#xxxneighborscontent .xxxBlockHead 
+{
+	background-color: #fcaf9b; /* for non-css3 browsers */
+}
+
+
+#neighborscontent .BlockHead:before
+{
+	content: url('images/icon_gwrra.gif');
+}
+
+#weather .BlockHead
+{
+	background-color: #99CCFF;
+}
+
+#weather .BlockHead:before
+{
+	content: url('images/icon_weather.gif');
+}
+
+#humorcontent .BlockHead
+{
+	background-color: #DDCCAA;
+}
+
+#humorcontent .BlockHead:before
+{
+	content: url('images/icon_humor.gif');
+}
+
+#humorcontent .BlockBody
+{
+	background-color: #FFEECC;
+}
+
+
+#safetycontent .BlockHead
+{
+	background-color: #8dee8d;
+}
+
+#safetycontent .BlockHead:before
+{
+	content: url('images/icon_safety.gif');
+}
+
+#safetycontent .BlockBody
+{
+	background-color: #DDFFDD;
+}
+
+#quotescontent .BlockHead
+{
+	background-color: #8dee8d;
+}
+
+#quotescontent .BlockHead:before
+{
+	content: url('images/pullquote.gif');
+}
+
+#quotescontent .BlockBody
+{
+	background-color: #DDFFDD;
+}

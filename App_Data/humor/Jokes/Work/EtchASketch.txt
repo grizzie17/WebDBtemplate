@@ -1,0 +1,25 @@
+{{i:Frequently Asked Questions for Etch-A-Sketch Technical Support}}
+
+{{b:Q:}} My Etch-A-Sketch has all of these funny little lines all over the screen. 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} How do I turn my Etch-A-Sketch off? 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} What's the shortcut for Undo? 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} How do I create a New Document window? 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} How do I set the background and foreground to the same color? 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} What is the proper procedure for rebooting my Etch-A-Sketch? 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} How do I delete a document on my Etch-A-Sketch? 
+{{b:A:}} Pick it up and shake it. 
+
+{{b:Q:}} How do I save my Etch-A-Sketch document? 
+{{b:A:}} Don't shake it.

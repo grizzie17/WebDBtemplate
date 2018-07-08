@@ -1,0 +1,8 @@
+If I have seen farther than others, it is because I was standing on the shoulders of giants.
+{{i:-- Isaac Newton}}
+
+If I have not seen as far as others, it is because giants were standing on my shoulders.
+{{i:-- Hal Abelson}}
+
+In computer science, we stand on each other's feet.
+{{i:-- Brian Reid}}

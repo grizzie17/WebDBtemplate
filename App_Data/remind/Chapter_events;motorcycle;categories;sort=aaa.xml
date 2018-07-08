@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reminders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="remind.xsd">
+	<event id="e20081016142155">
+		<date type="single">2008 12 31</date>
+		<category>al-b</category>
+		<category>ride</category>
+		<category>b-ride</category>
+		<category>email</category>
+		<style>RmdRide</style>
+		<subject><![CDATA[End of Year Ride]]></subject>
+		<content><![CDATA[tbd]]></content>
+	</event>
+	<event id="e20081016142300">
+		<date type="single">2009 01 01</date>
+		<category>al-b</category>
+		<category>ride</category>
+		<category>b-ride</category>
+		<category>email</category>
+		<style>RmdRide</style>
+		<subject><![CDATA[Start of Year Ride]]></subject>
+		<content><![CDATA[tbd]]></content>
+	</event>
+	<event id="e20081211150220"><date type="weekly" duration-view="mag">1 2,6</date><category>al-x</category><style>RmdEvent</style><subject><![CDATA[Sample Weekly Event]]></subject></event><event id="e20081218100857">
+		<date type="keyword">moon full</date>
+		<style>RmdGWRRA_National</style>
+		<subject><![CDATA[Full Moon]]></subject>
+	</event>
+	<event id="e20081218102236">
+		<date type="keyword">moon new</date>
+		<style>RmdGWRRA_National</style>
+		<subject><![CDATA[New Moon]]></subject>
+	</event>
+	<event id="e20091022171549"><date type="single">2009 10 22</date><style>RmdCharity</style><subject><![CDATA[Another Message]]></subject><content><![CDATA[Some body text 2222222]]></content></event></reminders>

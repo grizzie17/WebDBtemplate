@@ -1,0 +1,8 @@
+﻿''<head>
+''<title>Forum District</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Summary of recent postings from the district forum">
+''</head>
+
+
+RSSForum "districtforum.xml", g_sDistrictDomain, "districtforum", "District Forum", 120

@@ -1,0 +1,8 @@
+﻿''<head>
+''<title>Humor</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Jokes and trivia to lighten your day">
+''</head>
+
+
+outputDynamic "humor", "loadextras.asp?q=humor&t=15", "humor.htm", "1.5", "n", 15, "d"

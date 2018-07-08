@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reminders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="remind.xsd">
+	<event id="e20050528135631">
+		<date type="yearly" yearly="wday" offset="# -2">06 3 1</date>
+		<category>email2</category>
+		<category>external</category>
+		<style>RmdMotorcycle</style>
+		<subject><![CDATA[http://www.hannigantrikes.com/ [Hannigan Homecoming]]]></subject><content><![CDATA[Hannigan Motorsports, 4044 U.S. Hwy. 641 South, Murray, Kentucky 42071]]></content>
+	</event>
+	<event id="e20050626195653">
+		<date type="yearly" yearly="wday">10 4 7</date>
+		<category>email2</category>
+		<category>external</category>
+		<category>entertainment</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.lynchburgtenn.com/jack_daniels_bar-b-q.html [Jack Daniel's Barbecue]]]></subject></event><event id="e20050629220110"><date type="yearly" yearly="wday">10 1 7</date><category>email2</category><category>external</category><category>entertainment</category><style>entertainment</style><subject><![CDATA[http://www.madisonstreetfestival.org/ [Madison Street Festival]]]></subject></event><event id="e20060111110126"><date type="yearly" yearly="wday" offset="# -3">04 1 1</date><category>external</category><category>email</category><category>entertainment</category><style>entertainment</style><subject><![CDATA[http://www.muleday.com/ [Mule Day]]]></subject><content><![CDATA[Columbia, TN]]></content>
+	</event>
+	<event id="e20060112210506">
+		<date type="yearly" yearly="dayn" offset="++ 1 # -1">01 02</date>
+		<category>external</category>
+		<category>email</category>
+		<style>RmdMotorcycle</style>
+		<subject><![CDATA[http://www.appletonmotorcycle.com/ [Music City Motorcycle Bike Show]]]></subject></event><event id="e20060224161126"><date type="single">2009 02 20</date><category>external</category><category>email2</category><category>rally</category><style>RmdMotorcycle</style><subject><![CDATA[http://www.motorcycleshows.com/motorcycleshows/static/staticHtml.jsp?id=359197 [Cycle World/International Motorcycle Shows]]]></subject><content><![CDATA[Carolina First Center, Greenville, SC. Thru Sunday]]></content>
+	</event>
+	<event id="e20060226174930">
+		<date type="yearly" yearly="wday">05 3 6</date>
+		<category>external</category>
+		<style>RmdCharityInfo</style>
+		<subject><![CDATA[http://nascar.com/nascarday [NASCAR Day]]]></subject></event><event id="e20060419144136"><date type="yearly" yearly="wday" offset="# -1">06 1 7</date><category>external</category><category>rally</category><category>email2</category><style>RmdMotorcycle</style><subject><![CDATA[http://www.wakinthedragonbikerrally.com/ [Wakin' the Dragon Biker Rally]]]></subject><content><![CDATA[Punkin Center Motorcycle Resort, Maryville, Tennessee]]></content>
+	</event>
+	<event id="e20060717224614">
+		<date type="yearly" yearly="wday">10 1 1</date>
+		<category>external</category>
+		<category>email</category>
+		<category>entertainment</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.cullmanoktoberfest.com/ [Cullman Oktoberfest]]]></subject><content><![CDATA[One week]]></content>
+	</event>
+	<event id="e20060717230509">
+		<date type="yearly" yearly="wday">04 4 7</date>
+		<category>external</category>
+		<category>email</category>
+		<category>entertainment</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.bloominfestival.com/ [Bloomin' Festival]]]></subject><content><![CDATA[St. Bernard Preparatory School (Ave Maria Grotto)]]></content>
+	</event>
+	<event id="e20060717231354">
+		<date type="yearly" yearly="wday" offset="# -1">04 4 1</date>
+		<category>external</category>
+		<category>entertainment</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.ardmore-renfaire.com/ [Ardmore Renaissance Festival]]]></subject></event><event id="e20060717231704"><date type="yearly" yearly="wday" offset="# -2">04 -1 1</date><category>external</category><category>entertainment</category><style>entertainment</style><subject><![CDATA[http://www.panoply.org/ [Panoply Arts Festival]]]></subject></event><event id="e20060717232440"><date type="yearly" yearly="wday">08 3 7</date><category>external</category><category>entertainment</category><style>entertainment</style><subject><![CDATA[http://www.franklincountychamber.org/festival.html [Watermelon Festival]]]></subject><content><![CDATA[Franklin County]]></content>
+	</event>
+	<event id="e20060717233722">
+		<date type="yearly" yearly="wday">10 4 7</date>
+		<category>external</category>
+		<category>entertainment</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.alarenfaire.org/ [Alabama Renaissance Faire]]]></subject><content><![CDATA[Florence]]></content>
+	</event>
+	<event id="e20060724163516">
+		<date type="yearly" yearly="wday" duration="4">08 1 5</date>
+		<category>external</category>
+		<category>email</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.127sale.com/ [World's Longest Yard Sale]]]></subject><location><![CDATA[Warning: Heavy Congestion]]></location>
+		<content><![CDATA[Covington, KY to Gadsden, AL]]></content>
+	</event>
+	<event id="e20060818235354">
+		<date type="yearly" yearly="wday" duration="2">10 3 7</date>
+		<category>external</category>
+		<category>email</category>
+		<style>RmdMotorcycle</style>
+		<subject><![CDATA[http://www.ahrma.org/ [American Historic Racing Motorcycle Association] Roadrace]]></subject>
+		<content><![CDATA[Barber Motorsports Park, Birmingham]]></content>
+	</event>
+	<event id="e20060819224240">
+		<date type="yearly" yearly="wday">10 4 7</date>
+		<category>external</category>
+		<category>entertainment</category>
+		<category>email</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://800alabama.com/things-to-do/events/details.cfm?id=6700 [Covered Bridge Festival]]]></subject></event><event id="e20060920100655"><date type="single" duration="5">2008 10 06</date><category>email</category><category>external</category><category>newsletter</category><style>RmdInfo</style><subject><![CDATA[Madison County Area Schools Fall Break]]></subject>
+	</event>
+	<event id="e20061123103046">
+		<date type="yearly" yearly="wday">05 3 7</date>
+		<category>external</category>
+		<category>email</category>
+		<style>RmdMotorcycle</style>
+		<subject><![CDATA[http://www.ahrma.org/ [American Historic Racing Motorcycle Association] Roadrace]]></subject>
+		<content><![CDATA[Talladega Raceway]]></content>
+	</event>
+	<event id="e20061206223603">
+		<date type="single">2008 04 19</date>
+		<category>external</category>
+		<category>motorcycle</category>
+		<category>lunch</category>
+		<category>rally</category>
+		<category>email2</category>
+		<style>RmdMotorcycle</style>
+		<subject><![CDATA[http://www.bikershack411.net/ [Crawfish Boil and Bike Show]]]></subject><content><![CDATA[Centre, AL]]></content>
+	</event>
+	<event id="e20061206224215">
+		<date type="yearly" yearly="wday" offset="# -2">05 3 1</date>
+		<category>external</category>
+		<category>rally</category>
+		<style>RmdMotorcycleLocal</style>
+		<subject><![CDATA[http://www.bikeorama.org/ [Bike-O-Rama]]]></subject></event><event id="e20070114001820"><date type="yearly" yearly="wday" offset="# -2">05 3 1</date><category>external</category><category>motorcycle</category><category>rally</category><category>email2</category><style>RmdMotorcycleLocal</style><subject><![CDATA[http://www.rivercityride.com/ [River City Ride, Bike Rally and Blues Festival]]]></subject></event><event id="e20070123145332"><date type="yearly" yearly="wday" offset="# +5">09 3 1</date><category>motorcycle</category><category>charity</category><category>email2</category><style>RmdCharityInfo</style><subject><![CDATA[http://www.stjudeswingsacrosstn.com/ [Wings Across Tennessee]]]></subject><content><![CDATA[St. Jude Childrens Research Hospital]]></content>
+	</event>
+	<event id="e20070225203529">
+		<date type="yearly" yearly="wday" offset="# -1">05 1 7</date>
+		<category>external</category>
+		<category>email</category>
+		<category>entertainment</category>
+		<style>entertainment</style>
+		<subject><![CDATA[http://www.pokesalatfestival.com/ [Poke Salat Festival]]]></subject><content><![CDATA[Historic Downtown Arab]]></content>
+	</event>
+	<event id="e20071120234759">
+		<date type="yearly" yearly="wday" offset="# 2">11 4 5</date>
+		<category>email</category>
+		<category>newsletter</category>
+		<category>external</category>
+		<style>entertainmentBig</style>
+		<subject><![CDATA[Iron Bowl]]></subject>
+	</event>
+	<event id="e20080118142620">
+		<date type="single">2009 02 17</date>
+		<category>external</category>
+		<category>newsletter</category>
+		<category>email</category>
+		<style>entertainmentBig</style>
+		<subject><![CDATA[Analog TV Obsolete]]></subject>
+	</event>
+	<event id="e20080729194531">
+		<date type="yearly" yearly="wday" pending="30">08 1 5</date>
+		<category>external</category>
+		<category>email2</category>
+		<category>charity</category>
+		<style>RmdCharityEnc</style>
+		<subject><![CDATA[Dairy Queen - http://www.miracletreatday.com/ [Miracle Treat Day]]]></subject><content><![CDATA[All proceeds for purchased Blizzards are donated to Children's Miracle Network Hospitals]]></content>
+	</event>
+</reminders>

@@ -1,0 +1,57 @@
+
+Upload file to file system with progress bar.
+
+<FORM name="upload" onsubmit="return form_onsubmit()" method="post" encType="multipart/form-data" action="Progress_Save.asp">
+	<INPUT type="File" name="File1"><BR>
+	<INPUT type="Submit" value="Upload">
+</FORM>
+<SCRIPT language="javascript">
+
+// define variable to point to progress window
+var UploadProgress;
+
+function form_onsubmit()
+{
+	
+	// Create a random session identifier.
+	var Session = new String();
+	Session = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+
+	// build URL for upload status
+	var ProgressUrl = "Progress_Status.asp?Session=" + Session;
+	
+	// define features for pop-up window
+	var Features = new String("");
+	
+	Features += "toolbar=no, ";
+	Features += "menubar=no, ";
+	Features += "status=no, ";
+	Features += "resizable=no, ";
+	Features += "width=200, ";
+	Features += "height=200";
+
+	// open the pop-up window
+	UploadProgress = window.open(ProgressUrl, "upload", Features);
+	
+	// append identification of session
+	document.upload.action += "?Session=" + Session;
+	
+	return true;
+
+}
+function window_onunload()
+{
+	// if progress doesn't exist, return
+	if(UploadProgress == null){return;}
+	
+	// if progress doesn't expose closed method
+	if(UploadProgress.closed){return}
+	
+	// close progress window
+	UploadProgress.close();
+}
+
+// assign event handler to unload event
+window.onunload = window_onunload;
+
+</SCRIPT>

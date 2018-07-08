@@ -1,0 +1,34 @@
+﻿''<head>
+''<title>Calendar Events 2</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Upcoming events for your group (3 weeks)">
+''</head>
+
+
+SUB makeCalendarUpcomingEvents2()
+
+	DIM	nDateBegin, nDateEnd
+
+	nDateBegin = jdateFromVBDate( NOW )
+	nDateEnd = nDateBegin + 7 * 3 - 1
+
+	DIM	sCategories
+	sCategories = REPLACE(TRIM(LCASE(g_sCalendarCategories)), " ", "")
+	IF "" = sCategories THEN
+		sCategories = LCASE(g_sSiteChapter) & ",core,key"
+	END IF
+
+Response.Write "<div class=""calendarcontent"">" & vbCRLF
+Response.Write "<div class=""BlockHead""><a href=""calendar.asp?cat=" & sCategories & """>Upcoming Events</a></div>" & vbCRLF
+Response.Write "<div class=""BlockBody"">"
+
+outputDynamic "calendarupcoming2", _
+"loadcalendar.asp?f=calendarupcoming2.htm&i=h&v=24&r=d&b=" & nDateBegin & "&e=" & nDateEnd & "&c=" & sCategories & "&h=holiday,usa,none&t=true&x=scripts/remind.xslt", _
+		"calendarupcoming2.htm", "0.5", "h", 24, "d"
+
+Response.Write "</div>" & vbCRLF
+Response.Write "</div>" & vbCRLF
+
+
+END SUB
+makeCalendarUpcomingEvents2

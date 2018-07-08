@@ -1,0 +1,26 @@
+MAN:
+
+1) Pull up to machine
+2) Wind window down
+3) Insert ATM card, enter PIN
+4) Retrieve cash
+5) Drive away
+
+WOMAN:
+
+1) Pull up to machine
+2) Open door (too far away from machine)
+3) Search through all of the 112 compartments in handbag for ATM card
+4) Do make up, apply lipstick, fix hair
+5) Insert Card
+6) Remove card
+7) Insert card the correct way up
+8) Search for piece of paper with PIN on it
+9) Enter PIN
+10) Enter correct PIN
+11) Retrieve cash, put in bag
+12) Drive off
+13) Reverse back to machine
+14) Retrieve card
+15) Drive three miles away 
+16) Release hand-brake

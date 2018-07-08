@@ -1,0 +1,8 @@
+﻿''<head>
+''<title>Calendar Neighbors</title>
+''<meta name="navigate" content="tab">
+''<meta name="description" content="Notices of your neighbors next group meetings">
+''</head>
+
+
+outputDynamic "neighbors", "loadneighbors.asp", "neighbors.htm", "2", "h", 24, "d"

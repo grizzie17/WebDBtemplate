@@ -1,0 +1,1 @@
+﻿<!--#include virtual="/scripts/include_picture2.asp"-->

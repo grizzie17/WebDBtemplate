@@ -1,0 +1,5 @@
+wakka wakka wakka!
+
+^{{picture fozzie.jpg}}
+{{i:-- Fozzie Bear}}
+{{small:Frank Oz}}
